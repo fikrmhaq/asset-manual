@@ -1,0 +1,307 @@
+/*
+ * Manual design tokens — Tailwind CSS v4, CSS-first (no tailwind.config.js).
+ *
+ * The palette is deliberately the SAME one the application itself uses
+ * (`apps/web/src/index.css`): a help center that looks like a different product
+ * from the product makes the reader doubt they are in the right place. The
+ * values are copied, not imported — the manual must not depend on `apps/web` for
+ * anything at build time or at runtime.
+ *
+ * What is new here is the DARK scheme. The application has none; the manual is
+ * read for long stretches, often at odd hours, and was asked for one.
+ *
+ * TWO LAYERS, as in the application:
+ *   1. PALETTE  — raw ramps (`--color-brand-*`, `--color-neutral-*`, …).
+ *      No component names these directly.
+ *   2. ROLES    — `--color-background`, `--color-muted-foreground`, `--color-border`…
+ *      Components name only these, and only the roles are redefined for dark.
+ */
+
+@import 'tailwindcss';
+
+/*
+ * Dark is CLASS-DRIVEN, not media-driven: the reader has three choices (light,
+ * dark, follow the system) and only a class can express the first two against a
+ * system that says otherwise. `ThemeProvider` owns the class; the inline script
+ * in `index.html` sets it before first paint so there is no flash.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ---------------------------------------------------------------------
+     Palette — brand. `-500` is the AL-MUFTI logo blue exactly.
+     --------------------------------------------------------------------- */
+  --color-brand-25: #f4fafe;
+  --color-brand-50: #e8f5fd;
+  --color-brand-100: #cfeafa;
+  --color-brand-200: #a3d7f4;
+  --color-brand-300: #6dc0eb;
+  --color-brand-400: #2aa5e0;
+  --color-brand-500: #008fd7;
+  --color-brand-600: #0072ae;
+  --color-brand-700: #005c8d;
+  --color-brand-800: #084b71;
+  --color-brand-900: #0c3f5e;
+  --color-brand-950: #07293d;
+
+  /* ---------------------------------------------------------------------
+     Palette — neutral
+     --------------------------------------------------------------------- */
+  --color-neutral-25: #fcfcfd;
+  --color-neutral-50: #f7f8f9;
+  --color-neutral-100: #eff1f3;
+  --color-neutral-200: #e2e5e9;
+  --color-neutral-300: #cdd1d7;
+  --color-neutral-400: #9aa0a8;
+  --color-neutral-500: #6b7075;
+  --color-neutral-600: #53585e;
+  --color-neutral-700: #3d4147;
+  --color-neutral-800: #292c31;
+  --color-neutral-900: #191b1e;
+  --color-neutral-950: #0e1012;
+
+  /* ---------------------------------------------------------------------
+     Palette — semantic. These carry meaning on a badge, not decoration.
+     --------------------------------------------------------------------- */
+  --color-success-50: #ecfdf3;
+  --color-success-100: #d1fadf;
+  --color-success-200: #a6f4c5;
+  --color-success-500: #12b76a;
+  --color-success-600: #047a4e;
+  --color-success-700: #03603d;
+
+  --color-warning-50: #fffaeb;
+  --color-warning-100: #fef0c7;
+  --color-warning-200: #fedf89;
+  --color-warning-500: #f79009;
+  --color-warning-600: #b54708;
+  --color-warning-700: #7a2e0e;
+
+  --color-danger-50: #fef3f2;
+  --color-danger-100: #fee4e2;
+  --color-danger-200: #fecdca;
+  --color-danger-500: #ef4b3c;
+  --color-danger-600: #c42a1d;
+  --color-danger-700: #9a2016;
+
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-200: #bfdbfe;
+  --color-info-500: #3b82f6;
+  --color-info-600: #1d4ed8;
+  --color-info-700: #1e3a8a;
+
+  /* ---------------------------------------------------------------------
+     Roles — light. Every one of these is redefined under `.dark` below, and
+     nowhere else. A component that names a PALETTE step instead of a role is
+     a component that will be wrong in one of the two schemes.
+     --------------------------------------------------------------------- */
+  --color-background: #ffffff;
+  --color-foreground: var(--color-neutral-900);
+  --color-canvas: var(--color-neutral-50);
+
+  --color-card: #ffffff;
+  --color-card-foreground: var(--color-neutral-900);
+
+  --color-primary: var(--color-brand-600);
+  --color-primary-foreground: #ffffff;
+  --color-primary-hover: var(--color-brand-700);
+  --color-brand: var(--color-brand-500);
+
+  --color-muted: var(--color-neutral-100);
+  --color-muted-foreground: var(--color-neutral-500);
+
+  --color-accent: var(--color-neutral-100);
+  --color-accent-foreground: var(--color-neutral-900);
+
+  --color-border: var(--color-neutral-200);
+  --color-border-strong: var(--color-neutral-300);
+  --color-ring: var(--color-brand-500);
+
+  --color-link: var(--color-brand-700);
+
+  /* Callouts and badges: a tint, an edge and a text colour per intent. */
+  --color-note-surface: var(--color-neutral-50);
+  --color-note-border: var(--color-neutral-300);
+  --color-note-foreground: var(--color-neutral-700);
+
+  --color-tip-surface: var(--color-success-50);
+  --color-tip-border: var(--color-success-500);
+  --color-tip-foreground: var(--color-success-700);
+
+  --color-important-surface: var(--color-brand-50);
+  --color-important-border: var(--color-brand-500);
+  --color-important-foreground: var(--color-brand-800);
+
+  --color-warning-surface: var(--color-warning-50);
+  --color-warning-border: var(--color-warning-500);
+  --color-warning-foreground: var(--color-warning-700);
+
+  --color-danger-surface: var(--color-danger-50);
+  --color-danger-border: var(--color-danger-500);
+  --color-danger-foreground: var(--color-danger-700);
+
+  /* ---------------------------------------------------------------------
+     Typography, elevation, radii — matching the application.
+     --------------------------------------------------------------------- */
+  --font-sans:
+    'Inter var', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  --shadow-xs: 0 1px 2px 0 rgb(25 27 30 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(25 27 30 / 0.08), 0 1px 2px -1px rgb(25 27 30 / 0.06);
+  --shadow-md: 0 4px 8px -2px rgb(25 27 30 / 0.08), 0 2px 4px -2px rgb(25 27 30 / 0.05);
+  --shadow-lg: 0 12px 16px -4px rgb(25 27 30 / 0.08), 0 4px 6px -2px rgb(25 27 30 / 0.04);
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
+
+  /* Shell metrics, named once so sidebar, header and content offset agree. */
+  --spacing-sidebar: 17rem;
+  --spacing-toc: 15rem;
+  --spacing-header: 3.5rem;
+}
+
+/*
+ * Roles — dark.
+ *
+ * Not an inversion. The ground is a warm-free near-black and surfaces step UP
+ * from it, which is how a dark interface reads as layered rather than as a
+ * light one with the lights off. Brand blue moves BRIGHTER (`-400`) because the
+ * `-600` fill that carries white text on white loses contrast on near-black.
+ */
+.dark {
+  --color-background: var(--color-neutral-950);
+  --color-foreground: var(--color-neutral-100);
+  --color-canvas: #0a0b0d;
+
+  --color-card: var(--color-neutral-900);
+  --color-card-foreground: var(--color-neutral-100);
+
+  --color-primary: var(--color-brand-400);
+  --color-primary-foreground: var(--color-neutral-950);
+  --color-primary-hover: var(--color-brand-300);
+  --color-brand: var(--color-brand-400);
+
+  --color-muted: var(--color-neutral-800);
+  --color-muted-foreground: var(--color-neutral-400);
+
+  --color-accent: var(--color-neutral-800);
+  --color-accent-foreground: var(--color-neutral-50);
+
+  --color-border: #24272b;
+  --color-border-strong: var(--color-neutral-700);
+  --color-ring: var(--color-brand-400);
+
+  --color-link: var(--color-brand-300);
+
+  /* Tints become low-alpha washes of the same hue: a `-50` surface is pure
+     glare on near-black, and a solid dark tint loses the intent colour. */
+  --color-note-surface: rgb(255 255 255 / 0.04);
+  --color-note-border: var(--color-neutral-600);
+  --color-note-foreground: var(--color-neutral-300);
+
+  --color-tip-surface: rgb(18 183 106 / 0.12);
+  --color-tip-border: var(--color-success-500);
+  --color-tip-foreground: #7ee2ad;
+
+  --color-important-surface: rgb(0 143 215 / 0.14);
+  --color-important-border: var(--color-brand-400);
+  --color-important-foreground: var(--color-brand-200);
+
+  --color-warning-surface: rgb(247 144 9 / 0.14);
+  --color-warning-border: var(--color-warning-500);
+  --color-warning-foreground: var(--color-warning-200);
+
+  --color-danger-surface: rgb(239 75 60 / 0.14);
+  --color-danger-border: var(--color-danger-500);
+  --color-danger-foreground: var(--color-danger-200);
+}
+
+@layer base {
+  html {
+    /* Anchored headings must clear the sticky header when jumped to. */
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--spacing-header) + 1.5rem);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-canvas);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.011em;
+    text-wrap: balance;
+  }
+
+  /* Prose lines should not run the full width of a 1440px display. */
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+
+}
+
+/*
+ * The focus ring — the accessibility baseline for the whole manual. Every
+ * interactive element shows where focus is, in the brand colour, at 2px with an
+ * offset that keeps it legible on a filled control as well as a plain
+ * background.
+ *
+ * DELIBERATELY UNLAYERED. Inside `@layer base` this competes with Tailwind's
+ * own base layer and depends on emission order to win; unlayered declarations
+ * beat every layered one outright, which removes the question. It is one rule
+ * and the guarantee is worth more than the tidiness of keeping it in the block
+ * above.
+ */
+:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+@layer components {
+  /*
+   * Skip link — visually hidden until focused, then a real, visible control.
+   * `sr-only` alone would leave a keyboard user with an invisible target.
+   */
+  .skip-link {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 100;
+    transform: translateY(-200%);
+    border-radius: var(--radius-md);
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: transform 120ms ease-out;
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+}

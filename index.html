@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="User manual and help center for the Asset Management System."
+    />
+    <title>Asset Management — User Manual</title>
+    <script>
+      /*
+       * Theme, applied before first paint.
+       *
+       * Without this the page renders light, then flips to dark once React
+       * mounts. The stored value is read here and the class is set on <html>
+       * synchronously; ThemeProvider takes over from the same key afterwards.
+       */
+      (function () {
+        try {
+          var stored = localStorage.getItem('manual.theme');
+          var choice = stored === 'light' || stored === 'dark' ? stored : 'system';
+          var dark =
+            choice === 'dark' ||
+            (choice === 'system' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.classList.toggle('dark', dark);
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+          var lang = localStorage.getItem('manual.language');
+          if (lang === 'en' || lang === 'id') document.documentElement.lang = lang;
+        } catch (error) {
+          /* Private mode, storage disabled — the default light theme is fine. */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
