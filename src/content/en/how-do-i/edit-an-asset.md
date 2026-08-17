@@ -24,8 +24,18 @@ them.
 
 ## What you can change
 
-Name, classification, institution, vendor and description — the same fields the
-create form offers.
+Name, classification, institution, vendor, contract and description — the same
+fields the create form offers.
+
+> [!NOTE]
+> The **Contract** field is how an asset registered directly gets traced to its
+> procurement afterwards, and how a wrong contract is corrected. Clearing it puts
+> the asset back to "No procurement record", which is a normal state, not missing
+> data.
+>
+> One refusal to expect: if the asset's units are already traced to line items of
+> a different contract, the change is rejected. Clear or re-point those units
+> first — each unit's line item is on the unit's own edit form.
 
 > [!IMPORTANT]
 > Changing the **classification** also changes which
@@ -37,7 +47,7 @@ create form offers.
 
 | Not on this form | Where it lives instead |
 |---|---|
-| The procurement line | Set once at creation. It cannot be attached, changed or removed afterwards |
+| Which line item each unit came from | The unit's own edit form — a unit's line item is a fact about that unit, not the asset |
 | Attribute values | The asset's **Attribute values** tab |
 | Attachments | The asset's **Attachments** tab |
 | The units | The **Units** tab — each unit is edited on its own page |

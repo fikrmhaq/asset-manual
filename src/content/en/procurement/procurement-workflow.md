@@ -90,9 +90,12 @@ records migrated from an older system. They are registered directly and have no
 procurement record at all — a documented, normal case. See
 [How do I register an asset directly?](/how-do-i/register-an-asset-directly).
 
-> [!IMPORTANT]
-> Decide which path applies **before** creating the asset. An asset's procurement
-> line is set once, at creation, and a contract cannot be attached afterwards.
+> [!NOTE]
+> Choosing the direct path is not final. A contract can be attached to the asset
+> later on its edit form, and each unit can be pointed at the line item it
+> arrived on from the unit's edit form. Registering from the contract in the
+> first place is still the shorter route: it sets both links for every unit at
+> once.
 
 ## Checking what has been traced
 

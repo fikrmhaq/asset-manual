@@ -32,7 +32,7 @@ keadaannya, siapa yang memegangnya — melekat pada
 | Instansi | Instansi pemiliknya. Bawaannya instansi Anda |
 | Vendor | Pabrikan atau merek. Opsional |
 | Deskripsi | Teks bebas. Opsional |
-| Baris pengadaan | Baris kontrak asalnya, jika ada. Ditetapkan sekali, saat pembuatan |
+| Kontrak | Kontrak pengadaan yang menjadi dasar pembeliannya, jika ada. Opsional dan dapat diubah — lihat [Bagaimana cara mengubah aset?](/how-do-i/edit-an-asset) |
 | Nilai atribut | Kolom tambahan sesuai klasifikasinya |
 | Lampiran | Berkas: faktur, foto, buku petunjuk |
 

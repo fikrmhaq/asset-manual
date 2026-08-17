@@ -44,10 +44,12 @@ Have ready:
    down one level at a time, then choose.
 5. Leave **Institution** on *Default to my institution*, or pick another one.
 6. Choose a **Vendor**, or leave it on *No vendor*.
-7. Add a **Description** if it helps whoever reads the record next.
-8. Select **Create asset**.
+7. Choose the **Contract** it was bought under, or leave it on
+   *No procurement record*.
+8. Add a **Description** if it helps whoever reads the record next.
+9. Select **Create asset**.
 
-![The New asset form](/screenshots/assets/create-asset.png)
+![The New asset form](/screenshots/assets/create-asset.gif)
 
 ## Field reference
 
@@ -57,12 +59,18 @@ Have ready:
 | Classification | Yes | Only the most specific level can be chosen. |
 | Institution | No | Defaults to your own institution. |
 | Vendor | No | The manufacturer or brand. Only shown if you can view vendors. |
+| Contract | No | The procurement contract it was bought under. Only shown if you can view contracts. |
 | Description | No | Up to 5,000 characters. |
 
 > [!NOTE]
-> There is no contract field on this form. An asset's procurement line is set
-> once — either it has none, or it was created from a contract line. It cannot be
-> attached afterwards.
+> The **Contract** field is optional, and can be set or changed later on the edit
+> form. Leaving it empty is a normal, documented case — donations, items built
+> in-house and migrated records have no contract to name.
+>
+> If the item did come from a contract already in the system, prefer
+> [registering it from that contract](/how-do-i/register-an-asset-from-a-contract).
+> That path also traces each individual unit to the line item it arrived on,
+> which choosing a contract here does not do on its own.
 
 ## What happens next?
 

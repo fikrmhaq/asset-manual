@@ -59,7 +59,7 @@ Untuk unit yang belum pernah memiliki catatan apa pun, Anda memerlukan kondisi
 6. Tulis **Deskripsi** perubahannya.
 7. Pilih **Catat**.
 
-![Dialog Catat perubahan keadaan](/screenshots/asset-units/record-a-change.png)
+![Dialog Catat perubahan keadaan](/screenshots/asset-units/record-a-change.gif)
 
 ## Rujukan kolom
 

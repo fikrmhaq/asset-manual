@@ -92,10 +92,12 @@ dan sama sekali tidak memiliki catatan pengadaan — kasus normal yang
 terdokumentasi. Lihat
 [Bagaimana cara mendaftarkan aset secara langsung?](/how-do-i/register-an-asset-directly).
 
-> [!IMPORTANT]
-> Tentukan jalur mana yang berlaku **sebelum** membuat asetnya. Baris pengadaan
-> sebuah aset ditetapkan sekali, saat pembuatan, dan kontrak tidak dapat
-> dilampirkan setelahnya.
+> [!NOTE]
+> Memilih jalur langsung bukan keputusan final. Kontrak masih dapat dilampirkan
+> ke aset kemudian melalui formulir ubahnya, dan setiap unit dapat diarahkan ke
+> rincian kontrak asalnya melalui formulir ubah unit. Mendaftarkan dari kontrak
+> sejak awal tetap jalur terpendek: sekali jalan, kaitannya terbentuk untuk semua
+> unit.
 
 ## Memeriksa apa yang sudah tertelusur
 

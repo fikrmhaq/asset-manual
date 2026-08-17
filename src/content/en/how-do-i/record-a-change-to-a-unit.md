@@ -58,7 +58,7 @@ and a location. After that, either may be left alone.
 6. Write a **Description** of the change.
 7. Select **Record**.
 
-![The Record a state change dialog](/screenshots/asset-units/record-a-change.png)
+![The Record a state change dialog](/screenshots/asset-units/record-a-change.gif)
 
 ## Field reference
 

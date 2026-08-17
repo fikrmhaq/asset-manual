@@ -31,7 +31,7 @@ is in, who has it — lives on the [asset unit](/concepts/asset-unit) instead.
 | Institution | Which institution owns it. Defaults to yours. |
 | Vendor | The manufacturer or brand. Optional. |
 | Description | Free text. Optional. |
-| Procurement line | The contract line it came from, if any. Set once, at creation. |
+| Contract | The procurement contract it was bought under, if any. Optional, and editable — see [How do I edit an asset?](/how-do-i/edit-an-asset). |
 | Attribute values | Extra fields configured for its classification. |
 | Attachments | Files: invoices, photographs, manuals. |
 

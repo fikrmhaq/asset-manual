@@ -26,7 +26,9 @@ kolom deskripsi, lokasi, dan kondisi untuk membedakan saudara-saudaranya.
 ### Ikhtisar
 
 Keadaan terkini barang fisik ini: status siklus hidup, kondisi, lokasi terkini,
-bagian penanggung jawab, deskripsi, dan baris pengadaan asalnya.
+bagian penanggung jawab, deskripsi, dan **rincian pengadaan** asalnya — disebut
+dengan namanya beserta tautan ke kontraknya, bukan sekadar kode acuan. Unit yang
+tidak tertaut ke rincian mana pun menyatakannya secara tegas.
 
 Lokasi ditampilkan sebagai **jejak lengkap** — situs, gedung, lantai, ruangan —
 bukan hanya nama ruangannya, sehingga Anda dapat melihat posisinya. Di bawahnya,
@@ -34,9 +36,12 @@ jika ada lokasi pada rantai itu yang memiliki [denah](/concepts/floor-plan), And
 akan melihat deretan tautan denah yang menuntun ke dalam.
 
 > [!NOTE]
-> Aksi **Ubah** pada tab ini hanya mengubah **Deskripsi**. Kondisi, lokasi, dan
-> status siklus hidup adalah fakta historis dan diubah melalui tab Riwayat.
-> Dialognya menyatakan hal itu.
+> Aksi **Ubah** pada tab ini mengubah **Deskripsi** dan, bila asetnya memiliki
+> kontrak, **Rincian pengadaan**. Kondisi, lokasi, dan status siklus hidup adalah
+> fakta historis dan diubah melalui tab Riwayat. Dialognya menyatakan hal itu.
+>
+> Hanya rincian dari kontrak aset itu sendiri yang ditawarkan — sebuah unit tidak
+> boleh mengaku datang lewat kontrak yang bukan dasar pembelian asetnya.
 >
 > Bagian ditampilkan di sini tetapi saat ini tidak dapat ditetapkan dari layar
 > ini.

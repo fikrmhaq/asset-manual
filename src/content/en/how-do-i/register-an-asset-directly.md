@@ -30,20 +30,23 @@ and none of them has a contract.
 Decide whether this really is the right path. If the item came from a contract
 that exists in the system, use
 [Register an asset from a contract](/how-do-i/register-an-asset-from-a-contract)
-instead — it makes the link for you, and the link cannot be added afterwards.
+instead — it makes both links for you, on the asset and on every unit, in one
+step.
 
-> [!IMPORTANT]
-> An asset's procurement line is set **once**, at creation. There is no field for
-> it on the asset form and no way to attach a contract to an asset later. If the
-> asset should be traceable to a contract, register it from the contract.
+> [!NOTE]
+> Choosing this path is not irreversible. If it turns out the item did come from
+> a contract, the asset's **Contract** field can be set afterwards on the edit
+> form, and each unit's line item on the unit's own edit form. Registering from
+> the contract is still less work when you know up front.
 
 ## Steps
 
 The procedure is the standard asset form:
 [How do I create an asset?](/how-do-i/create-an-asset).
 
-Complete it as normal. There is nothing extra to fill in and nothing to switch
-off — an asset created this way simply has no contract attached.
+Complete it as normal, leaving **Contract** on *No procurement record*. There is
+nothing else to switch off — an asset created this way simply has no contract
+attached.
 
 ## Recording where it came from
 

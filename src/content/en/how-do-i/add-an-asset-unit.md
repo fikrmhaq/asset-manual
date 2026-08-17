@@ -34,15 +34,29 @@ condition it is in — is recorded afterwards as history.
 2. Open the **Units** tab.
 3. Select **Add unit**.
 4. Optionally enter a **Description** to tell this unit apart from its siblings.
-5. Select **Create**.
+5. If the asset has a contract, optionally choose the **Procurement item** this
+   unit arrived on.
+6. Select **Create**.
 
-![The Add a unit dialog](/screenshots/asset-units/add-unit.png)
+![The Add a unit dialog](/screenshots/asset-units/add-unit.gif)
 
 ## Field reference
 
 | Field | Required | Notes |
 |---|---|---|
 | Description | No | Free text. Useful for a serial number or a nickname until attributes are filled in. |
+| Procurement item | No | Which line of the asset's contract this unit came from. Only shown when the asset has a contract and you can view contract items. |
+
+> [!NOTE]
+> **Procurement item** is per unit, not per asset. Ten laptops on one contract
+> line are ten units all pointing at that same line; a replacement that arrived
+> under a different contract points somewhere else, or nowhere.
+>
+> Only line items belonging to the asset's own contract are offered, and the
+> application refuses any other. If the list is not what you expect, check the
+> asset's Contract field first.
+>
+> You can set this later instead — it is on the unit's own edit form.
 
 ## What happens next?
 

@@ -25,8 +25,19 @@ akan bertanya sebelum membuangnya.
 
 ## Yang dapat Anda ubah
 
-Nama, klasifikasi, instansi, vendor, dan deskripsi — kolom yang sama dengan
-formulir pembuatan.
+Nama, klasifikasi, instansi, vendor, kontrak, dan deskripsi — kolom yang sama
+dengan formulir pembuatan.
+
+> [!NOTE]
+> Kolom **Kontrak** adalah cara menautkan aset yang didaftarkan langsung ke
+> pengadaannya di kemudian hari, sekaligus cara memperbaiki kontrak yang salah.
+> Mengosongkannya mengembalikan aset ke keadaan "Tanpa catatan pengadaan", yang
+> wajar dan bukan berarti datanya kurang.
+>
+> Satu penolakan yang mungkin muncul: jika unit-unit aset ini sudah tertaut ke
+> rincian dari kontrak lain, perubahan akan ditolak. Kosongkan atau arahkan ulang
+> rincian unit tersebut lebih dulu — rincian pengadaan setiap unit ada pada
+> formulir ubah unit itu sendiri.
 
 > [!IMPORTANT]
 > Mengubah **klasifikasi** juga mengubah [atribut](/concepts/attributes) mana yang
@@ -38,7 +49,7 @@ formulir pembuatan.
 
 | Tidak ada pada formulir ini | Letaknya |
 |---|---|
-| Baris pengadaan | Ditetapkan sekali saat pembuatan. Tidak dapat dilampirkan, diubah, atau dilepas setelahnya |
+| Rincian pengadaan tiap unit | Formulir ubah pada unit itu sendiri — rincian pengadaan adalah fakta tentang unit, bukan tentang asetnya |
 | Nilai atribut | Tab **Nilai atribut** pada aset |
 | Lampiran | Tab **Lampiran** pada aset |
 | Unit-unitnya | Tab **Unit** — setiap unit disunting pada halamannya sendiri |

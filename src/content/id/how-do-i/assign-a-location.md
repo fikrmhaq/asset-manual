@@ -42,7 +42,7 @@ Ini juga cara unit yang baru dibuat mulai dioperasikan.
 8. Tulis **Deskripsi** perubahannya.
 9. Pilih **Catat**.
 
-![Dialog Catat perubahan keadaan](/screenshots/asset-units/record-a-change.png)
+![Dialog Catat perubahan keadaan](/screenshots/asset-units/record-a-change.gif)
 
 ## Rujukan kolom
 

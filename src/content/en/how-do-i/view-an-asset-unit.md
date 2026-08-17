@@ -26,8 +26,9 @@ Use the description, location and condition columns to tell siblings apart.
 ### Overview
 
 The current state of this physical item: lifecycle state, condition, current
-location, responsible department, description, and the procurement line it came
-from.
+location, responsible department, description, and the **procurement item** it
+came from — named, with a link to its contract, rather than shown as a reference
+code. A unit that is not traced to a line item says so.
 
 The location is shown as a **full trail** — site, building, floor, room — not
 just the room name, so you can see where it sits. Beneath it, if any location in
@@ -35,9 +36,13 @@ that chain has a [floor plan](/concepts/floor-plan), you get a row of plan links
 leading inward.
 
 > [!NOTE]
-> The **Edit** action on this tab changes only the **Description**. Condition,
-> location and lifecycle state are historical facts and are changed through the
-> History tab. The dialog says so.
+> The **Edit** action on this tab changes the **Description** and, when the asset
+> has a contract, the **Procurement item**. Condition, location and lifecycle
+> state are historical facts and are changed through the History tab. The dialog
+> says so.
+>
+> Only line items of the asset's own contract are offered — a unit cannot claim
+> to have arrived on a contract its asset was not bought under.
 >
 > Department is displayed here but cannot currently be set from this screen.
 

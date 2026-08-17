@@ -32,22 +32,24 @@ registri, dan tidak satu pun memiliki kontrak.
 Pastikan ini memang jalur yang tepat. Jika barangnya berasal dari kontrak yang
 ada di sistem, gunakan
 [Mendaftarkan aset dari kontrak](/how-do-i/register-an-asset-from-a-contract) —
-jalur itu membuat kaitannya untuk Anda, dan kaitan tersebut tidak dapat
-ditambahkan kemudian.
+jalur itu membuat kedua kaitannya sekaligus, pada aset dan pada setiap unit,
+dalam satu langkah.
 
-> [!IMPORTANT]
-> Baris pengadaan sebuah aset ditetapkan **sekali**, saat pembuatan. Tidak ada
-> kolomnya pada formulir aset dan tidak ada cara melampirkan kontrak ke aset di
-> kemudian hari. Jika aset seharusnya dapat ditelusuri ke sebuah kontrak,
-> daftarkan dari kontraknya.
+> [!NOTE]
+> Memilih jalur ini bukan keputusan yang tidak bisa ditarik kembali. Bila
+> ternyata barangnya memang berasal dari sebuah kontrak, kolom **Kontrak** pada
+> aset dapat diisi kemudian melalui formulir ubah, dan rincian pengadaan setiap
+> unit melalui formulir ubah unitnya. Mendaftarkan langsung dari kontrak tetap
+> lebih ringkas bila Anda sudah tahu sejak awal.
 
 ## Langkah-langkah
 
 Prosedurnya adalah formulir aset biasa:
 [Bagaimana cara membuat aset?](/how-do-i/create-an-asset).
 
-Isi seperti biasa. Tidak ada tambahan yang perlu diisi dan tidak ada yang perlu
-dimatikan — aset yang dibuat lewat jalur ini memang tidak memiliki kontrak.
+Isi seperti biasa, dan biarkan **Kontrak** pada *Tanpa catatan pengadaan*. Tidak
+ada lagi yang perlu dimatikan — aset yang dibuat lewat jalur ini memang tidak
+memiliki kontrak.
 
 ## Mencatat asal-usulnya
 

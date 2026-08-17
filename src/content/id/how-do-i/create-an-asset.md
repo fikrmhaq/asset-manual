@@ -45,10 +45,12 @@ Siapkan:
    persempit satu tingkat demi satu tingkat, lalu pilih.
 5. Biarkan **Instansi** pada *Gunakan instansi saya*, atau pilih yang lain.
 6. Pilih **Vendor**, atau biarkan pada *Tanpa vendor*.
-7. Tambahkan **Deskripsi** bila membantu pembaca catatan berikutnya.
-8. Pilih **Buat aset**.
+7. Pilih **Kontrak** yang menjadi dasar pembeliannya, atau biarkan pada *Tanpa
+   catatan pengadaan*.
+8. Tambahkan **Deskripsi** bila membantu pembaca catatan berikutnya.
+9. Pilih **Buat aset**.
 
-![Formulir Aset baru](/screenshots/assets/create-asset.png)
+![Formulir Aset baru](/screenshots/assets/create-asset.gif)
 
 ## Rujukan kolom
 
@@ -58,12 +60,19 @@ Siapkan:
 | Klasifikasi | Ya | Hanya tingkat paling rinci yang dapat dipilih |
 | Instansi | Tidak | Bawaannya instansi Anda |
 | Vendor | Tidak | Pabrikan atau merek. Hanya tampil jika Anda dapat melihat vendor |
+| Kontrak | Tidak | Kontrak pengadaan yang menjadi dasar pembeliannya. Hanya tampil jika Anda dapat melihat kontrak |
 | Deskripsi | Tidak | Maksimal 5.000 karakter |
 
 > [!NOTE]
-> Tidak ada kolom kontrak pada formulir ini. Baris pengadaan sebuah aset
-> ditetapkan sekali — entah tidak ada sama sekali, atau aset itu dibuat dari
-> sebuah baris kontrak. Kontrak tidak dapat dilampirkan setelahnya.
+> Kolom **Kontrak** bersifat opsional dan masih dapat diisi atau diubah kemudian
+> melalui formulir ubah. Mengosongkannya adalah keadaan yang wajar dan
+> terdokumentasi — hibah, barang buatan sendiri, dan hasil migrasi memang tidak
+> memiliki kontrak.
+>
+> Jika barangnya memang berasal dari kontrak yang sudah ada di sistem, lebih baik
+> [daftarkan dari kontrak tersebut](/how-do-i/register-an-asset-from-a-contract).
+> Jalur itu sekaligus menautkan setiap unit ke rincian kontrak asalnya, yang
+> tidak dilakukan hanya dengan memilih kontrak di sini.
 
 ## Apa yang terjadi setelahnya
 

@@ -34,15 +34,30 @@ letaknya, bagaimana kondisinya — dicatat setelahnya sebagai riwayat.
 2. Buka tab **Unit**.
 3. Pilih **Tambah unit**.
 4. Isi **Deskripsi** bila ingin membedakan unit ini dari saudaranya.
-5. Pilih **Buat**.
+5. Jika asetnya memiliki kontrak, pilih **Rincian pengadaan** asal unit ini bila
+   perlu.
+6. Pilih **Buat**.
 
-![Dialog Tambah unit](/screenshots/asset-units/add-unit.png)
+![Dialog Tambah unit](/screenshots/asset-units/add-unit.gif)
 
 ## Rujukan kolom
 
 | Kolom | Wajib | Catatan |
 |---|---|---|
 | Deskripsi | Tidak | Teks bebas. Berguna untuk nomor seri atau penanda sementara sebelum atribut diisi |
+| Rincian pengadaan | Tidak | Rincian kontrak aset ini yang menjadi asal unit tersebut. Hanya tampil bila asetnya memiliki kontrak dan Anda dapat melihat rincian kontrak |
+
+> [!NOTE]
+> **Rincian pengadaan** melekat pada unit, bukan pada aset. Sepuluh laptop dari
+> satu baris kontrak berarti sepuluh unit yang menunjuk baris yang sama;
+> penggantinya yang datang lewat kontrak lain menunjuk ke tempat lain, atau tidak
+> menunjuk sama sekali.
+>
+> Hanya rincian dari kontrak aset itu sendiri yang ditawarkan, dan aplikasi
+> menolak selain itu. Bila daftarnya tidak sesuai harapan, periksa dulu kolom
+> Kontrak pada asetnya.
+>
+> Ini juga dapat diisi kemudian melalui formulir ubah pada unitnya.
 
 ## Apa yang terjadi setelahnya
 

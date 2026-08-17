@@ -42,7 +42,7 @@ This is also how a brand-new unit enters service.
 8. Write a **Description** of the change.
 9. Select **Record**.
 
-![The Record a state change dialog](/screenshots/asset-units/record-a-change.png)
+![The Record a state change dialog](/screenshots/asset-units/record-a-change.gif)
 
 ## Field reference
 
