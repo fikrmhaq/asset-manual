@@ -20,9 +20,17 @@ nothing, so creating a user is really two jobs: the account, then its roles.
 ## Before you begin
 
 - Decide which **roles** the person needs. If the right role does not exist yet,
-  [create it first](/how-do-i/create-a-role).
+  [create it first](/how-do-i/create-a-role) — or ask a system administrator to,
+  if you administer a single institution.
 - Decide their **institution**. This bounds what they can see, unless one of
   their roles is system-wide.
+
+> [!NOTE]
+> **If you administer one institution**, two things are decided for you. New
+> users are created in your own institution — there is no choice to make. And the
+> role picker offers only the roles marked assignable for institutions, which is
+> the set a system administrator has decided you may hand out. Anything not on
+> that list has to go through them.
 - Have an initial password ready — at least 12 characters. You will need to give
   it to them by some means outside this application.
 

@@ -53,6 +53,9 @@ Unit-scoped attributes are **not** here; they are on each unit. See
 Files attached to the asset: invoices, delivery notes, photographs, manuals. PDF,
 JPG, PNG, DOCX and XLSX, up to 10 MB each.
 
+Photographs and PDFs open on the page — select the file name. See
+[Attaching files to an asset](/assets/attachments).
+
 > [!NOTE]
 > Each tab loads its own information. If one tab is empty or missing while the
 > others work, that usually means you do not have permission for that particular

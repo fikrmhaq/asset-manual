@@ -1,6 +1,6 @@
 ---
 title: Classification
-description: The fixed reference hierarchy every asset and location is filed under.
+description: The reference hierarchy every asset and location is filed under, and how to add your own entries to it.
 order: 40
 keywords: [classification, klasifikasi, code, hierarchy, leaf, most specific, picker]
 related:
@@ -17,15 +17,71 @@ kinds of item.
 Every [asset](/concepts/asset) and every [location](/concepts/location) must be
 classified.
 
-## Read-only, on purpose
+## Government entries are fixed
 
-You cannot add, edit or remove classifications. This is external reference data,
-maintained outside the application, and the whole point of it is that it means
-the same thing everywhere. You can browse and search it under **Classifications**
-in the sidebar.
+The hierarchy that ships with the application comes from outside it and cannot be
+changed here. You cannot rename, move or remove any of those entries, and the
+whole point of that is that they mean the same thing everywhere. You can browse
+and search them under **Classifications** in the sidebar.
 
 Each entry has a twelve-character code and a name. The code is what makes an
 entry unambiguous, and it appears alongside the name in most places.
+
+## Adding your own
+
+Sometimes the government list has nothing that fits — a piece of equipment
+specific to your institution, or a kind of room that only your building has. You
+can register your own entry for those, and it then behaves like any other
+classification: it shows up in the picker, it can carry attributes, and it counts
+in reports.
+
+Additions are marked **Locally added** wherever they appear, so it is always
+clear which entries came with the application and which your institution
+registered.
+
+### Where an addition can go
+
+An addition can only be placed at the **most specific level** — under an entry
+whose children are the individual items rather than further groupings. The **Add
+entry** button appears only when you have drilled down far enough; if you cannot
+see it, keep narrowing down.
+
+This is not an arbitrary restriction. Adding beneath a broader grouping would
+turn an entry that assets are already filed under into a grouping, and every one
+of those assets would become invalid.
+
+### The code is assigned for you
+
+You choose the name; the application assigns the twelve-character code. It is
+issued from the far end of the available range so it can never clash with a code
+a future government update introduces.
+
+### Who can see it
+
+When you add an entry you choose whether it is for **your institution only** or
+for **all institutions**. An entry belonging to one institution is invisible to
+the others — it does not appear in their picker, their searches or their reports.
+
+Only a system administrator can create an entry for all institutions, or share an
+existing one with everybody afterwards.
+
+> [!WARNING]
+> Sharing an entry with all institutions cannot be undone. Once other
+> institutions can file assets under it, taking it back would leave those assets
+> pointing at something their users cannot see.
+
+### Renaming and removing
+
+An entry your institution added can be **renamed** at any time. The code never
+changes, so assets and locations already filed under it are unaffected — only the
+label they display changes.
+
+It can be **deleted** only while nothing uses it. If any asset, location or
+attribute definition refers to it, the deletion is refused and the message says
+what is holding it. Reassign those records first.
+
+There is no way to deactivate an entry — it is either in use, or it can be
+removed outright.
 
 ## Only the most specific level can be chosen
 

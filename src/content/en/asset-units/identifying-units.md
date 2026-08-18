@@ -13,6 +13,27 @@ Units of the same asset are identical by definition. Making them tellable apart
 is something you have to do deliberately, and it is much easier at creation than
 six months later.
 
+## Its inventory code
+
+Every unit is given an **inventory code** when it is registered — something like
+`ALM-1-2026-00042`. It is built from your institution's code, the year, and a
+running number, and the application assigns it. You cannot choose it, and it
+never changes: not when the unit moves department, not when the asset is
+transferred to another institution, not even if the institution's own code is
+later edited.
+
+That permanence is the point. Once a code is printed on a sticker and that
+sticker is on a machine, nothing the system does afterwards can be allowed to
+make the sticker wrong.
+
+The code appears at the top of the unit's Overview tab, and you can print it as a
+label — see [Printing unit labels](/asset-units/printing-labels).
+
+> [!NOTE]
+> A unit whose asset has no owning institution shows **Not assigned** instead.
+> The code is built from the institution, so there is nothing to build one from.
+> Set an institution on the asset and units registered afterwards will get codes.
+
 ## The three things that distinguish a unit
 
 ### 1. Its description
@@ -50,25 +71,29 @@ Attribute values tab, and it cannot be confused with anything else.
 
 > [!LIMITATION]
 > Attribute values are **not searchable**. There is no way to type a serial
-> number into a search box and find the unit that carries it. Units are always
-> reached through their asset: find "Dell Latitude 5420", open the Units tab, and
-> look down the list.
+> number into a search box and find the unit that carries it. Apart from scanning
+> a label, units are reached through their asset: find "Dell Latitude 5420", open
+> the Units tab, and look down the list.
 >
-> This is worth knowing before you design a labelling scheme around serial
-> numbers. Recording them is valuable for identification once you have the unit
-> in front of you; it will not help you find the unit from the number alone.
+> This is worth knowing before you design anything around serial numbers.
+> Recording them is valuable for identification once you have the unit in front
+> of you; it will not help you find the unit from the number alone. The inventory
+> code is the identifier that does work in reverse, because scanning its label
+> goes straight to the record.
 
 ## A practical convention
 
 For an organization registering units in batches, this works well:
 
-1. Give every unit a **description** carrying its physical label —
-   "Asset tag AM-0412".
-2. Configure a **unit-scoped attribute** for the serial number, and fill it in.
-3. Put the same asset tag on the physical item.
+1. **Print the label** and put it on the physical item. That covers finding the
+   record from the object — scan it, or type the code.
+2. Give every unit a **description** naming something permanent about that
+   particular item.
+3. Configure a **unit-scoped attribute** for the serial number, and fill it in.
 
-Then the label on the object, the description in the picker, and the attribute on
-the record all agree, and anyone holding the item can find its record.
+The first step is the one that closes the loop between the shelf and the system.
+The other two are what let you tell two units apart on screen, where there is no
+sticker to look at.
 
 ## Related articles
 

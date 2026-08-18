@@ -49,6 +49,7 @@ Creating a role requires a system-wide role of your own.
 |---|---|---|
 | Name | Yes | Up to 50 characters. Must be unique |
 | System-wide | No | Lifts the institution boundary from this role's permissions |
+| Institution-assignable | No | Lets institution administrators give this role to their own users |
 
 ## System-wide or not
 
@@ -57,8 +58,8 @@ Leave it off for almost every role. A role that is not system-wide is
 what you want for the people running one site.
 
 Turn it on when the role must see across institutions, or when it needs any of
-the permissions that only make sense organization-wide: managing institutions,
-managing roles, managing the permission catalogue, or assigning roles to users.
+the permissions that only make sense organization-wide: creating or editing
+institutions and roles, or changing what a role grants.
 
 > [!IMPORTANT]
 > System-wide grants nothing by itself. It only removes the institution
@@ -67,6 +68,29 @@ managing roles, managing the permission catalogue, or assigning roles to users.
 
 The permissions screen marks the codes that require it. Once any of them is
 granted, turning system-wide back off is refused until you ungrant them.
+
+## Institution-assignable or not
+
+This decides whether institution administrators may hand the role out to their
+own users. Off by default, and off is the safe answer.
+
+Turn it on for the ordinary working roles a school or office fills itself — a
+storekeeper, a borrowing clerk, a read-only viewer. Leave it off for anything you
+want to stay in your hands.
+
+> [!WARNING]
+> **This grants the role's permissions to every institution administrator.**
+>
+> Whoever creates a user account also sets its password, so they can sign in as
+> it. An administrator who can assign a role can therefore take it for
+> themselves: create an account, assign the role, log in as that account.
+>
+> Before turning this on, ask whether you would be comfortable granting these
+> permissions to every institution administrator directly. If not, leave it off.
+
+A system-wide role can never be institution-assignable. The toggle is unavailable
+while System-wide is on, and the system refuses the combination even if it is
+attempted directly.
 
 ## What happens next?
 

@@ -51,6 +51,7 @@ Membuat peran memerlukan peran menyeluruh pada akun Anda sendiri.
 |---|---|---|
 | Nama | Ya | Maksimal 50 karakter. Harus unik |
 | Menyeluruh | Tidak | Menghapus batas instansi dari izin peran ini |
+| Dapat diberikan instansi | Tidak | Memungkinkan admin instansi memberikan peran ini kepada penggunanya sendiri |
 
 ## Menyeluruh atau tidak
 
@@ -59,8 +60,8 @@ Biarkan mati untuk hampir setiap peran. Peran yang tidak menyeluruh bersifat
 itulah yang Anda inginkan bagi orang-orang yang menjalankan satu lokasi.
 
 Aktifkan bila peran harus melihat lintas instansi, atau bila peran membutuhkan
-salah satu izin yang hanya bermakna secara organisasi: mengelola instansi,
-mengelola peran, mengelola katalog izin, atau memberikan peran kepada pengguna.
+salah satu izin yang hanya bermakna secara organisasi: membuat atau menyunting
+instansi dan peran, atau mengubah izin yang dibawa sebuah peran.
 
 > [!IMPORTANT]
 > Menyeluruh tidak memberi apa pun dengan sendirinya. Ia hanya menghapus
@@ -69,6 +70,30 @@ mengelola peran, mengelola katalog izin, atau memberikan peran kepada pengguna.
 
 Layar izin menandai kode yang mensyaratkannya. Begitu salah satunya diberikan,
 mematikan status menyeluruh akan ditolak sampai izin tersebut dicabut.
+
+## Dapat diberikan instansi atau tidak
+
+Ini menentukan apakah admin instansi boleh membagikan peran tersebut kepada
+penggunanya sendiri. Bawaannya mati, dan mati adalah jawaban yang aman.
+
+Aktifkan untuk peran kerja sehari-hari yang diisi sendiri oleh sekolah atau
+kantor — petugas gudang, petugas peminjaman, atau pengguna baca-saja. Biarkan
+mati untuk apa pun yang ingin Anda pegang sendiri.
+
+> [!WARNING]
+> **Ini memberikan izin peran tersebut kepada setiap admin instansi.**
+>
+> Siapa pun yang membuat akun pengguna juga menetapkan kata sandinya, sehingga ia
+> dapat masuk sebagai akun itu. Admin yang dapat memberikan sebuah peran karena
+> itu dapat mengambilnya untuk dirinya sendiri: buat akun, berikan peran
+> tersebut, lalu masuk sebagai akun itu.
+>
+> Sebelum menyalakannya, tanyakan apakah Anda nyaman memberikan izin-izin ini
+> langsung kepada setiap admin instansi. Jika tidak, biarkan mati.
+
+Peran menyeluruh tidak akan pernah bisa ditandai dapat diberikan instansi.
+Sakelarnya tidak tersedia selama Menyeluruh aktif, dan sistem menolak kombinasi
+tersebut sekalipun dicoba secara langsung.
 
 ## Apa yang terjadi setelahnya
 

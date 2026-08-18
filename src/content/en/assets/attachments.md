@@ -2,7 +2,7 @@
 title: Attaching files to an asset
 description: Keep invoices, photographs and manuals with the record they belong to.
 order: 10
-keywords: [attachment, file, upload, document, invoice, photo, manual, pdf, lampiran]
+keywords: [attachment, file, upload, download, preview, view, open, document, invoice, photo, manual, pdf, lampiran]
 related:
   - how-do-i/view-an-asset
   - concepts/asset
@@ -40,11 +40,27 @@ delivery.
 > against that unit. In practice people attach it to the asset and say which unit
 > it shows in the file name.
 
+## Viewing without downloading
+
+Photographs and PDFs open in a window on the page. Select the file name, or the
+eye icon beside it.
+
+| File type | Opens in the app |
+|---|---|
+| JPG, JPEG, PNG | Yes |
+| PDF | Yes |
+| DOCX, XLSX | No — download it |
+
+DOCX and XLSX have no preview because the browser cannot display them. They
+still download normally, and open in Word or Excel as usual.
+
+> [!TIP]
+> The file is only fetched when you open it, not when the list loads. An asset
+> carrying several large photographs still opens its Attachments tab quickly.
+
 ## Downloading and removing
 
-Selecting an attachment downloads it. Files always download rather than opening
-in the browser, which is deliberate — uploaded files come from many sources and
-are not rendered in place.
+The download icon saves the file under its original name.
 
 **Delete** removes a file permanently, and needs `perm:attachment:delete`.
 Deleting an attachment affects nothing else on the asset.

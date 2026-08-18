@@ -1,6 +1,6 @@
 ---
 title: Klasifikasi
-description: Hierarki referensi baku tempat setiap aset dan lokasi digolongkan.
+description: Hierarki referensi tempat setiap aset dan lokasi digolongkan, dan cara menambahkan entri sendiri.
 order: 40
 keywords: [klasifikasi, kode, hierarki, paling rinci, pemilih, golongan]
 related:
@@ -16,16 +16,71 @@ entri, tersusun dari pengelompokan luas hingga jenis barang yang sangat spesifik
 Setiap [aset](/concepts/asset) dan setiap [lokasi](/concepts/location) harus
 diklasifikasikan.
 
-## Hanya dapat dibaca, memang disengaja
+## Entri dari pemerintah bersifat tetap
 
-Anda tidak dapat menambah, mengubah, atau menghapus klasifikasi. Ini adalah data
-referensi eksternal yang dikelola di luar aplikasi, dan justru itulah gunanya:
-maknanya sama di mana pun. Anda dapat menelusuri dan mencarinya melalui
-**Klasifikasi** di bilah sisi.
+Hierarki bawaan aplikasi berasal dari luar dan tidak dapat diubah di sini. Anda
+tidak dapat mengganti nama, memindahkan, atau menghapus entri tersebut, dan
+justru itulah gunanya: maknanya sama di mana pun. Anda dapat menelusuri dan
+mencarinya melalui **Klasifikasi** di bilah sisi.
 
 Setiap entri memiliki kode dua belas karakter dan sebuah nama. Kode itulah yang
 membuat sebuah entri tidak ambigu, dan ia ditampilkan bersama nama di sebagian
 besar tempat.
+
+## Menambah entri sendiri
+
+Kadang tidak ada entri pemerintah yang cocok — peralatan khusus milik instansi
+Anda, atau jenis ruangan yang hanya ada di gedung Anda. Untuk hal seperti itu
+Anda dapat mendaftarkan entri sendiri, dan entri tersebut akan berperilaku sama
+seperti klasifikasi lain: muncul di pemilih, dapat memiliki atribut, dan ikut
+terhitung dalam laporan.
+
+Tambahan ditandai **Tambahan lokal** di mana pun ia muncul, sehingga selalu jelas
+mana entri bawaan aplikasi dan mana yang didaftarkan instansi Anda.
+
+### Di mana tambahan boleh diletakkan
+
+Tambahan hanya boleh diletakkan pada **tingkat paling rinci** — di bawah entri
+yang anak-anaknya berupa barang satuan, bukan pengelompokan lebih lanjut. Tombol
+**Tambah rincian** baru muncul setelah Anda menelusuri cukup dalam; jika belum
+terlihat, teruskan menelusuri ke bawah.
+
+Ini bukan pembatasan yang mengada-ada. Menambah di bawah pengelompokan yang lebih
+luas akan mengubah entri yang sudah dipakai aset menjadi pengelompokan, dan semua
+aset tersebut menjadi tidak sah.
+
+### Kodenya diberikan otomatis
+
+Anda memilih namanya; aplikasi yang memberikan kode dua belas karakternya. Kode
+diambil dari ujung jauh rentang yang tersedia sehingga tidak akan pernah bentrok
+dengan kode yang muncul pada pemutakhiran dari pemerintah.
+
+### Siapa yang dapat melihatnya
+
+Saat menambah entri, Anda memilih apakah entri itu **hanya untuk instansi Anda**
+atau untuk **semua instansi**. Entri milik satu instansi tidak terlihat oleh
+instansi lain — tidak muncul di pemilih, pencarian, maupun laporan mereka.
+
+Hanya administrator sistem yang dapat membuat entri untuk semua instansi, atau
+membagikan entri yang sudah ada kepada semuanya.
+
+> [!WARNING]
+> Membagikan entri ke semua instansi tidak dapat dibatalkan. Begitu instansi lain
+> dapat memakainya, menariknya kembali akan membuat aset mereka menunjuk pada
+> sesuatu yang tidak dapat dilihat penggunanya.
+
+### Mengubah nama dan menghapus
+
+Entri yang ditambahkan instansi Anda dapat **diubah namanya** kapan saja. Kodenya
+tidak pernah berubah, sehingga aset dan lokasi yang sudah memakainya tidak
+terpengaruh — hanya label yang ditampilkan yang berubah.
+
+Entri hanya dapat **dihapus** selama belum dipakai. Jika ada aset, lokasi, atau
+definisi atribut yang merujuknya, penghapusan ditolak dan pesannya menyebutkan
+apa yang menahannya. Pindahkan dulu catatan tersebut.
+
+Tidak ada cara menonaktifkan entri — entri itu sedang dipakai, atau dapat dihapus
+sekaligus.
 
 ## Hanya tingkat paling rinci yang dapat dipilih
 

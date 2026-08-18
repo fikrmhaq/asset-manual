@@ -2,7 +2,7 @@
 title: Melampirkan berkas pada aset
 description: Menyimpan faktur, foto, dan buku petunjuk bersama catatan yang bersangkutan.
 order: 10
-keywords: [lampiran, berkas, unggah, dokumen, faktur, foto, buku petunjuk, pdf]
+keywords: [lampiran, berkas, unggah, unduh, pratinjau, lihat, buka, dokumen, faktur, foto, buku petunjuk, pdf]
 related:
   - how-do-i/view-an-asset
   - concepts/asset
@@ -40,11 +40,28 @@ seluruh pengiriman.
 > menaruhnya pada unit tersebut. Dalam praktiknya orang melampirkannya pada aset
 > dan menyebutkan unit mana yang ditampilkan melalui nama berkasnya.
 
+## Melihat tanpa mengunduh
+
+Foto dan PDF terbuka pada jendela di halaman itu juga. Pilih nama berkasnya, atau
+ikon mata di sebelahnya.
+
+| Jenis berkas | Terbuka di aplikasi |
+|---|---|
+| JPG, JPEG, PNG | Ya |
+| PDF | Ya |
+| DOCX, XLSX | Tidak — unduh berkasnya |
+
+DOCX dan XLSX tidak memiliki pratinjau karena peramban tidak dapat
+menampilkannya. Berkasnya tetap dapat diunduh dan dibuka di Word atau Excel
+seperti biasa.
+
+> [!TIP]
+> Berkas baru diambil ketika Anda membukanya, bukan ketika daftarnya dimuat.
+> Aset yang memuat beberapa foto besar tetap membuka tab Lampiran dengan cepat.
+
 ## Mengunduh dan menghapus
 
-Memilih sebuah lampiran akan mengunduhnya. Berkas selalu diunduh, bukan dibuka di
-peramban — hal itu disengaja, karena berkas unggahan berasal dari banyak sumber
-dan tidak ditampilkan langsung.
+Ikon unduh menyimpan berkas dengan nama aslinya.
 
 **Hapus** menghilangkan berkas secara permanen, dan memerlukan
 `perm:attachment:delete`. Menghapus lampiran tidak memengaruhi apa pun pada

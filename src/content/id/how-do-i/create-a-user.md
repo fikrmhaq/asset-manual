@@ -21,9 +21,17 @@ pekerjaan: akunnya, lalu perannya.
 ## Sebelum memulai
 
 - Tentukan **peran** apa yang dibutuhkan orang tersebut. Jika peran yang tepat
-  belum ada, [buat lebih dahulu](/how-do-i/create-a-role).
+  belum ada, [buat lebih dahulu](/how-do-i/create-a-role) — atau mintalah admin
+  sistem membuatkannya, bila Anda mengelola satu instansi saja.
 - Tentukan **instansinya**. Instansi membatasi apa yang dapat mereka lihat,
   kecuali salah satu perannya bersifat menyeluruh.
+
+> [!NOTE]
+> **Bila Anda mengelola satu instansi**, dua hal sudah ditentukan untuk Anda.
+> Pengguna baru dibuat di instansi Anda sendiri — tidak ada pilihan yang perlu
+> diambil. Dan pemilih peran hanya menampilkan peran yang ditandai dapat
+> diberikan instansi, yaitu himpunan yang sudah ditetapkan admin sistem sebagai
+> boleh Anda bagikan. Selain itu harus melalui mereka.
 - Siapkan kata sandi awal — minimal 12 karakter. Anda perlu menyampaikannya
   kepada mereka melalui sarana di luar aplikasi ini.
 

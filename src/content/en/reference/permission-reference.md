@@ -52,7 +52,7 @@ assignments is not meaningful within a single institution. See
 
 | Resource | Permissions | |
 |---|---|---|
-| Asset classifications | `perm:classification:read` | Read-only data |
+| Asset classifications | `perm:classification:read`, `create`, `update`, `delete`, `promote` | Writes only affect locally added entries |
 | Categories | `perm:category:read` | Read-only data |
 | Attribute definitions | `perm:attribute-definition:create` `perm:attribute-definition:read` `perm:attribute-definition:update` `perm:attribute-definition:deactivate` | |
 | Measurement units | `perm:measurement-unit:create` `perm:measurement-unit:read` `perm:measurement-unit:update` `perm:measurement-unit:delete` | |
@@ -111,8 +111,13 @@ assignments is not meaningful within a single institution. See
   given to different people.
 - **Transactions** have no `update` and no `delete`. They are permanent records,
   and no permission changes that.
-- **Classifications**, **categories** and **condition values** are read-only
-  reference data, so they have `read` and nothing else.
+- **Categories** and **condition values** are read-only reference data, so they
+  have `read` and nothing else.
+- **Classifications** are mostly read-only, but an institution can register its
+  own entries at the most specific level. The write permissions apply only to
+  those; the government hierarchy refuses them however the permission is granted.
+  `perm:classification:promote` additionally needs a system-wide role, since it
+  shares an entry across every institution.
 - **Attachments** and **floor-plan areas** are guarded separately from the assets
   and locations they belong to, so a role can view an asset without seeing its
   files.

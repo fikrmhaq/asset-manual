@@ -221,7 +221,10 @@ describe('markdown rendering', () => {
 
     const image = container.querySelector('article figure img');
     expect(image).toBeTruthy();
-    expect(image.getAttribute('src')).toMatch(/screenshots\/assets\/create-asset\.png$/);
+    // `.gif`, not `.png`: the article's capture was replaced with a recording of
+    // the form being filled in. The assertion is about the slot resolving to the
+    // path the article authored, so it follows the article.
+    expect(image.getAttribute('src')).toMatch(/screenshots\/assets\/create-asset\.gif$/);
   });
 
   it('rewrites an authored path onto the build base, so a sub-path deploy works', () => {

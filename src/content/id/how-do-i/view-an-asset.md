@@ -55,6 +55,9 @@ Lihat [Atribut](/concepts/attributes).
 Berkas yang dilampirkan pada aset: faktur, berita acara, foto, buku petunjuk.
 PDF, JPG, PNG, DOCX, dan XLSX, maksimal 10 MB per berkas.
 
+Foto dan PDF terbuka pada halaman itu juga — pilih nama berkasnya. Lihat
+[Melampirkan berkas pada aset](/assets/attachments).
+
 > [!NOTE]
 > Setiap tab memuat datanya sendiri. Jika satu tab kosong atau tidak ada padahal
 > tab lain berfungsi, biasanya Anda tidak memiliki izin untuk hal tersebut —
