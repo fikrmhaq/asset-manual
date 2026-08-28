@@ -74,11 +74,11 @@ mencocokkannya dengan stiker di tangan.
 
 Anda akan melihat **Belum ada** dan tidak ada tombol cetak.
 
-Nomor inventaris dibentuk dari instansi pemilik, jadi unit yang asetnya belum
-memiliki instansi tidak punya bahan untuk membentuknya. Tetapkan instansi pada
-asetnya; unit yang didaftarkan setelah itu akan mendapat nomor. Unit lama tetap
-kosong, karena nomor yang muncul belakangan tidak akan cocok dengan apa pun yang
-sudah tercetak.
+Nomor inventaris dibentuk dari format milik instansi pemilik, jadi unit yang
+asetnya belum memiliki instansi tidak punya bahan untuk membentuknya. Tetapkan
+instansi pada asetnya; unit yang didaftarkan setelah itu akan mendapat nomor.
+Unit lama tetap kosong, karena nomor yang muncul belakangan tidak akan cocok
+dengan apa pun yang sudah tercetak.
 
 ## Catatan praktis
 
@@ -89,7 +89,13 @@ sudah tercetak.
   inventaris juga dicetak besar: ketika kode QR akhirnya tidak terbaca, orang
   masih dapat membaca nomornya dan mengetiknya.
 - **Mencetak ulang aman.** Nomornya tidak pernah berubah, jadi label pengganti
-  persis sama dengan yang digantikannya.
+  persis sama dengan yang digantikannya. Ini tetap berlaku meskipun instansi Anda
+  sejak itu merancang ulang formatnya — perancangan ulang berlaku bagi unit yang
+  didaftarkan sesudahnya, tidak pernah bagi nomor yang sudah terbit.
+- **Dua bentuk di rak adalah hal biasa.** Setelah format diubah, unit lama tetap
+  membawa nomor berbentuk lama dan unit baru membawa bentuk yang baru. Keduanya
+  dapat dipindai, dan tidak ada yang keliru. Lihat
+  [Format kode inventaris](/administration/inventory-code-format).
 
 ## Artikel terkait
 

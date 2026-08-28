@@ -71,7 +71,7 @@ neither says it is part of a chain.
 The list filters by status, institution and overdue, but not by date.
 
 **What to do:** use the **Borrowings report** instead, which does have a date
-range. See [The eight reports](/reports/the-eight-reports).
+range. See [The reports](/reports/the-reports).
 
 ## Exports contain only the rows on screen
 

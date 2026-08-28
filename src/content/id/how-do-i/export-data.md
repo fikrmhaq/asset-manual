@@ -8,13 +8,18 @@ permissions:
 keywords: [ekspor, csv, unduh, lembar kerja, excel, keluarkan data]
 related:
   - how-do-i/run-a-report
-  - reports/the-eight-reports
+  - reports/the-reports
 ---
 
 ## Untuk apa ini
 
-Mengunduh laporan yang sedang Anda lihat sebagai berkas CSV, yang dapat dibuka di
+Mengunduh laporan yang sedang Anda lihat sebagai berkas, yang dapat dibuka di
 aplikasi lembar kerja mana pun.
+
+Sebagian besar laporan mengekspor **CSV berisi apa yang tampil di layar**. Satu
+laporan — **Inventaris (per unit)** — mengekspor **lembar kerja berisi seluruh
+baris yang sesuai dengan penyaring Anda**, beserta foto. Tombolnya menyebutkan
+mana yang Anda peroleh: *Ekspor CSV* atau *Ekspor lembar kerja*.
 
 Ekspor tersedia **hanya pada laporan**. Daftar aset, daftar peminjaman, dan layar
 daftar lainnya tidak memiliki ekspor.
@@ -41,13 +46,21 @@ halaman akan mengekspor 20 baris, bukan 400.
 
 ## Mendapatkan ekspor yang lengkap
 
-Dua pendekatan, tergantung laporannya:
+Tiga keadaan, tergantung laporannya:
+
+**Inventaris (per unit)** adalah pengecualian, sekaligus yang paling sederhana.
+Tombolnya bertuliskan **Ekspor lembar kerja**, dan hasilnya memuat **seluruh baris
+yang sesuai dengan penyaring Anda** — berkasnya disusun oleh server, sehingga
+halaman tidak lagi menjadi soal. Hasilnya juga berupa lembar kerja, bukan CSV,
+dengan tata letak seperti daftar inventaris yang biasa disusun instansi secara
+manual, lengkap dengan foto. Jika yang Anda butuhkan adalah inventaris lengkap
+yang siap dicetak, gunakan laporan ini.
 
 **Laporan berkelompok** — Status, Menurut klasifikasi, Menurut organisasi,
 Menurut lokasi, Menurut kondisi — tidak berhalaman. Ekspornya benar-benar
 lengkap, karena semuanya sudah tampil di layar.
 
-**Laporan baris** — Inventaris, Peminjaman, Ketertelusuran pengadaan —
+**Laporan baris lainnya** — Inventaris, Peminjaman, Ketertelusuran pengadaan —
 berhalaman. Untuk memperoleh semuanya:
 
 - Persempit penyaringnya sampai hasilnya muat dalam satu halaman, lalu ekspor
@@ -75,4 +88,4 @@ Tidak ada aksi tunggal "ekspor semuanya". Yang paling mendekati adalah laporan
 ## Tugas terkait
 
 - [Bagaimana cara menjalankan laporan?](/how-do-i/run-a-report)
-- [Delapan laporan](/reports/the-eight-reports)
+- [Daftar laporan](/reports/the-reports)

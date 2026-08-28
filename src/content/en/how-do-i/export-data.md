@@ -8,13 +8,18 @@ permissions:
 keywords: [export, csv, download, spreadsheet, excel, extract, data out]
 related:
   - how-do-i/run-a-report
-  - reports/the-eight-reports
+  - reports/the-reports
 ---
 
 ## What this does
 
-Downloads the report you are looking at as a CSV file, which opens in any
+Downloads the report you are looking at as a file, which opens in any
 spreadsheet application.
+
+Most reports export a **CSV of what is on screen**. One — **Inventory (per
+unit)** — exports a **workbook of everything matching your filters**, with
+photographs. The button says which you are getting: *Export CSV* or *Export
+workbook*.
 
 Exporting is available from **reports only**. The asset list, the borrowings
 list and the other list screens have no export.
@@ -40,14 +45,21 @@ This catches people out. An inventory of 400 assets shown 20 to a page exports
 
 ## Getting a complete export
 
-Two approaches, depending on the report:
+Three cases, depending on the report:
+
+**Inventory (per unit)** is the exception, and the simplest. Its button reads
+**Export workbook**, and it covers **everything matching your filters** — the
+server builds the file, so pages do not come into it. It is also a spreadsheet
+rather than a CSV, laid out like the inventory sheet an institution keeps by
+hand, with photographs included. If what you want is a complete, printable
+inventory, use this report and stop reading here.
 
 **Grouped reports** — Status, By classification, By organization, By location, By
 condition — are not paged. Their export is genuinely complete, because everything
 is already on screen.
 
-**Row reports** — Inventory, Borrowings, Procurement traceability — are paged.
-To get everything:
+**The other row reports** — Inventory, Borrowings, Procurement traceability — are
+paged. To get everything:
 
 - Narrow the filters so the result fits one page, and export each slice
   separately — by institution, by classification, by date range; or
@@ -72,4 +84,4 @@ report, filtered and exported in slices as above.
 ## Related articles
 
 - [How do I run a report?](/how-do-i/run-a-report)
-- [The eight reports](/reports/the-eight-reports)
+- [The reports](/reports/the-reports)

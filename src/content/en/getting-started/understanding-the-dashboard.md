@@ -5,7 +5,7 @@ order: 40
 keywords: [dashboard, home, summary, overview, statistics, counts, beranda]
 related:
   - getting-started/finding-your-way-around
-  - reports/the-eight-reports
+  - reports/the-reports
 ---
 
 The Dashboard is the first screen after signing in. It is a summary, not a
@@ -65,4 +65,4 @@ Two different reasons, with different remedies:
 
 - [Finding your way around](/getting-started/finding-your-way-around)
 - [Understanding permissions](/getting-started/understanding-permissions)
-- [The eight reports](/reports/the-eight-reports)
+- [The reports](/reports/the-reports)

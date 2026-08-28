@@ -7,6 +7,7 @@ related:
   - concepts/asset-unit
   - concepts/attributes
   - how-do-i/add-an-asset-unit
+  - administration/inventory-code-format
 ---
 
 Units of the same asset are identical by definition. Making them tellable apart
@@ -16,23 +17,38 @@ six months later.
 ## Its inventory code
 
 Every unit is given an **inventory code** when it is registered — something like
-`ALM-1-2026-00042`. It is built from your institution's code, the year, and a
-running number, and the application assigns it. You cannot choose it, and it
-never changes: not when the unit moves department, not when the asset is
-transferred to another institution, not even if the institution's own code is
-later edited.
+`ALM-1-2026-00042`.
+
+Its **shape belongs to your institution**. Out of the box it is the institution's
+code, the year and a running number, but an administrator can redesign it — by
+classification, by department, behind a fixed prefix, with slashes instead of
+hyphens. See [Inventory code format](/administration/inventory-code-format).
+
+Whatever the shape, the code **never changes** once issued: not when the unit
+moves department, not when the asset is transferred to another institution, not
+when your institution's own code is edited, and not when the format itself is
+redesigned.
 
 That permanence is the point. Once a code is printed on a sticker and that
 sticker is on a machine, nothing the system does afterwards can be allowed to
-make the sticker wrong.
+make the sticker wrong. It follows that an institution which changes its format
+runs two shapes side by side for a while, and both are correct.
 
 The code appears at the top of the unit's Overview tab, and you can print it as a
 label — see [Printing unit labels](/asset-units/printing-labels).
 
 > [!NOTE]
+> **You may be asked to type part of it.** Where the institution's format
+> includes a **Number composition**, registering a unit asks for that value — the
+> number your institution already keeps in its own register. Everything else is
+> filled in for you, and the code as a whole is still assembled by the
+> application. See [How do I add an asset unit?](/how-do-i/add-an-asset-unit).
+
+> [!NOTE]
 > A unit whose asset has no owning institution shows **Not assigned** instead.
-> The code is built from the institution, so there is nothing to build one from.
-> Set an institution on the asset and units registered afterwards will get codes.
+> There is no institution, so there is no format and nothing to build a code
+> from. Set an institution on the asset and units registered afterwards will get
+> codes.
 
 ## The three things that distinguish a unit
 

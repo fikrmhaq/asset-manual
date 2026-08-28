@@ -8,7 +8,7 @@ permissions:
 keywords: [export assets, asset register, csv, download assets, spreadsheet, backup]
 related:
   - how-do-i/export-data
-  - reports/the-eight-reports
+  - reports/the-reports
 ---
 
 ## The short answer
@@ -60,4 +60,4 @@ These four are grouped reports, so their exports are complete rather than paged.
 ## Related articles
 
 - [How do I export data?](/how-do-i/export-data)
-- [The eight reports](/reports/the-eight-reports)
+- [The reports](/reports/the-reports)

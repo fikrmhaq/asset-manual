@@ -33,10 +33,11 @@ letaknya, bagaimana kondisinya — dicatat setelahnya sebagai riwayat.
 1. Buka **Aset** lalu pilih asetnya.
 2. Buka tab **Unit**.
 3. Pilih **Tambah unit**.
-4. Isi **Deskripsi** bila ingin membedakan unit ini dari saudaranya.
-5. Jika asetnya memiliki kontrak, pilih **Rincian pengadaan** asal unit ini bila
+4. Bila kolom **Komposisi nomor** ditampilkan, isikan nomornya. Lihat di bawah.
+5. Isi **Deskripsi** bila ingin membedakan unit ini dari saudaranya.
+6. Jika asetnya memiliki kontrak, pilih **Rincian pengadaan** asal unit ini bila
    perlu.
-6. Pilih **Buat**.
+7. Pilih **Buat**.
 
 ![Dialog Tambah unit](/screenshots/asset-units/add-unit.gif)
 
@@ -44,8 +45,33 @@ letaknya, bagaimana kondisinya — dicatat setelahnya sebagai riwayat.
 
 | Kolom | Wajib | Catatan |
 |---|---|---|
+| Komposisi nomor | Hanya bila ditampilkan | Menjadi bagian dari kode inventaris permanen unit ini. Maksimal 16 karakter: huruf, angka, tanda hubung, garis bawah, dan titik |
 | Deskripsi | Tidak | Teks bebas. Berguna untuk nomor seri atau penanda sementara sebelum atribut diisi |
 | Rincian pengadaan | Tidak | Rincian kontrak aset ini yang menjadi asal unit tersebut. Hanya tampil bila asetnya memiliki kontrak dan Anda dapat melihat rincian kontrak |
+
+## Tentang Komposisi nomor
+
+Kolom ini muncul **hanya jika format kode inventaris instansi Anda memintanya**.
+Sebagian besar instansi tidak, dan tidak pernah melihatnya.
+
+Bila muncul, isinya adalah nomor yang sudah dicatat instansi Anda dalam
+registernya sendiri, dan nomor itu menjadi bagian dari kode inventaris permanen
+unit tersebut. Aplikasi menyimpan persis seperti yang Anda ketik — tidak pernah
+menyesuaikan, memendekkan, atau menghitung lanjutan darinya.
+
+> [!CAUTION]
+> Tidak ada cara memperbaikinya setelahnya. Kode yang dihasilkannya terbit pada
+> saat unit dibuat, dan sebuah kode bersifat permanen menurut rancangannya —
+> mengubah unit tidak akan menawarkan kolom ini lagi. Periksa nomornya sebelum
+> memilih Buat.
+
+> [!NOTE]
+> Jika aplikasi menyatakan nilainya sudah dipakai, berarti unit lain sudah
+> membawa kode yang akan dihasilkan nomor Anda. Pilih nomor lain — pesannya
+> menyebut kolom ini, bukan kodenya, karena inilah bagian yang dapat Anda ubah.
+
+Administrator menentukan apakah kolom ini muncul; lihat
+[Format kode inventaris](/administration/inventory-code-format).
 
 > [!NOTE]
 > **Rincian pengadaan** melekat pada unit, bukan pada aset. Sepuluh laptop dari

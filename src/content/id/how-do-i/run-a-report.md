@@ -7,7 +7,7 @@ permissions:
   - report:read
 keywords: [laporan, jalankan laporan, statistik, ringkasan, analisis, angka]
 related:
-  - reports/the-eight-reports
+  - reports/the-reports
   - how-do-i/export-data
 ---
 
@@ -21,7 +21,7 @@ related:
 
 ## Memilih yang tepat
 
-Lihat [Delapan laporan](/reports/the-eight-reports) untuk mengetahui jawaban
+Lihat [Daftar laporan](/reports/the-reports) untuk mengetahui jawaban
 masing-masing. Titik awal yang umum:
 
 | Yang Anda inginkan | Laporan |
@@ -63,5 +63,5 @@ berhalaman, itu berarti halaman yang sedang tampil saja.
 
 ## Tugas terkait
 
-- [Delapan laporan](/reports/the-eight-reports)
+- [Daftar laporan](/reports/the-reports)
 - [Bagaimana cara mengekspor data?](/how-do-i/export-data)

@@ -75,7 +75,7 @@ Daftar menyaring menurut status, instansi, dan keterlambatan, tetapi tidak
 menurut tanggal.
 
 **Yang dilakukan:** gunakan **laporan Peminjaman**, yang memiliki rentang
-tanggal. Lihat [Delapan laporan](/reports/the-eight-reports).
+tanggal. Lihat [Daftar laporan](/reports/the-reports).
 
 ## Ekspor hanya memuat baris yang tampil
 

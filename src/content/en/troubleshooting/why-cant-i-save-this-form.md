@@ -6,6 +6,7 @@ keywords: [error, validation, cannot save, refused, conflict, required, failed]
 related:
   - borrowing/borrowing-statuses
   - getting-started/finding-your-way-around
+  - administration/inventory-code-format
 ---
 
 A refusal to save is always one of five kinds. The message tells you which,
@@ -58,7 +59,7 @@ typed.
 
 ---
 
-## Two refusals that surprise people
+## Three refusals that surprise people
 
 ### "Record a change" refuses without a description
 
@@ -79,3 +80,28 @@ It is not. The save is refused unless you write one.
 For a unit that has never had either recorded, "carry forward" has nothing to
 carry. The first entry must set both. Every entry after that may leave them
 blank.
+
+### Registering a unit is refused for something not on the form
+
+A message such as *"this institution's inventory code format requires funding
+source code, and this registration has none"* is not about anything you typed.
+
+Your institution's inventory code format is built from values the application
+looks up — the department, the classification, the funding source on the
+contract. If the format needs one and it cannot be found, registration is
+refused, because the alternative is a permanent code with a hole in it printed
+onto a sticker.
+
+The fix is almost never on the form in front of you:
+
+| Message names | Where to fix it |
+|---|---|
+| Funding source code | **Organization › Lookups › Funding sources** — a row flagged **No code yet** needs its abbreviation set |
+| Department code | Assign the unit to a department as you register it |
+| Number composition | Fill in the field on the form; this one *is* on the form |
+
+A refusal naming the **funding source code** is the common one, and it is
+usually the funding source rather than the contract: the contract names a source
+correctly, but that source has never been given its abbreviation. See
+[Reference lookups](/administration/reference-lookups) and
+[Inventory code format](/administration/inventory-code-format).

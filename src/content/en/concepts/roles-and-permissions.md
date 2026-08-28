@@ -77,6 +77,50 @@ those are granted.
 available to them and what each one grants — otherwise they would be handing out
 access without knowing what it is.
 
+## PIC-scoped roles, and why a permission can be ignored
+
+A role can also be marked **PIC-scoped**. That is for someone responsible for one
+or more departments — a department head — and it narrows what they reach to the
+asset units of the departments they are currently PIC of, plus the borrowings and
+transactions made entirely of those units.
+
+> [!IMPORTANT]
+> **A PIC-scoped role cannot hold every permission, and grants outside its
+> allowance are silently ignored.**
+>
+> This is the single most confusing thing about roles, so it is worth stating
+> plainly: you can tick `perm:report:read` on a PIC-scoped role, save it, and the
+> user still will not see most reports. The tick is not lost — it is recorded and
+> shown — it simply has no effect while the role is PIC-scoped.
+
+The permission checklist marks each one it would ignore: **Not effective for a
+PIC-scoped role**, with a warning icon. If a permission you granted appears to do
+nothing, that marker is the first thing to check.
+
+Why it works this way: the boundary must not depend on an administrator
+remembering what *not* to grant. A mis-ticked box should be inert, not a hole.
+
+Nothing is destroyed. Clear the PIC-scoped flag and every grant you made becomes
+effective at once, exactly as recorded.
+
+### What a PIC-scoped role can still reach
+
+The allowance covers the work a department head actually does: reading and
+updating their own units, recording history against them, attachments and
+attribute values on those units, the borrowings and transactions built from them,
+and the reference data those forms need.
+
+Absent, deliberately: the asset registry, the user directory, departments, the
+audit log, and role administration.
+
+**Reports are a partial case.** Most reports count things across the whole
+institution, including assets a department head cannot open, so `perm:report:read`
+is outside the allowance. But **Inventory (per unit)** is a list of asset units
+rather than an institution-wide total, so it is gated on `perm:asset-unit:read` —
+which *is* in the allowance. A department head therefore sees the Reports section
+with exactly one report in it: their own departments' inventory, which they can
+export and print. See [The reports](/reports/the-reports).
+
 ## Assigning roles to users
 
 A user holds any number of roles, and their effective permissions are everything

@@ -105,7 +105,7 @@ Laporan **Ketertelusuran pengadaan** menunjukkan aset mana yang tertelusur ke
 sebuah kontrak dan berapa banyak unitnya yang membawa item baris tersebut —
 itulah cara menemukan barang yang didaftarkan langsung padahal seharusnya
 didaftarkan dari kontrak. Lihat
-[Delapan laporan](/reports/the-eight-reports).
+[Daftar laporan](/reports/the-reports).
 
 ## Artikel terkait
 
