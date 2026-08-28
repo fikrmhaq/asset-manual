@@ -102,7 +102,7 @@ procurement record at all — a documented, normal case. See
 The **Procurement traceability** report shows which assets trace back to a
 contract and how many of their units carry the line item — which is how you find
 things registered directly that should have been registered from a contract. See
-[The eight reports](/reports/the-eight-reports).
+[The reports](/reports/the-reports).
 
 ## Related articles
 

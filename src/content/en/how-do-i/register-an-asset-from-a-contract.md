@@ -38,8 +38,9 @@ contract behind it.
 5. Select the **Classification**. Only the most specific level can be chosen.
 6. Choose a **Vendor** if you want to record the manufacturer.
 7. Set **Asset units to register**. This is pre-filled with the quantity ordered.
-8. Add a **Description** if it helps.
-9. Select **Create asset**.
+8. If a **Number composition** field is shown, fill it in. See below.
+9. Add a **Description** if it helps.
+10. Select **Create asset**.
 
 ![Adding an asset from a contract line item](/screenshots/procurement/add-asset-from-contract.gif)
 
@@ -51,12 +52,41 @@ contract behind it.
 | Classification | Yes | The contract line carries none, so it is chosen here. Most specific level only. |
 | Vendor | No | The manufacturer or brand. |
 | Asset units to register | Yes | A whole number from 1 to 500. Pre-filled with the quantity ordered. |
+| Number composition | Only when shown | Part of each unit's permanent inventory code. One value, or one per unit — see below. |
 | Description | No | Up to 5,000 characters. |
 
 > [!TIP]
 > Registering fewer units than were ordered is normal, not an error. Partial
 > deliveries are expected — register what arrived, and register the rest against
 > the same line item when it turns up.
+
+## About Number composition
+
+This field appears **only if your institution's inventory code format asks for
+one**, and it takes one of two shapes depending on how that format is built:
+
+- **One value for the whole batch.** The format also counts up a sequence, and
+  that sequence is what tells the units apart. Type the number once.
+- **One value per unit**, entered one per line in a box, with a running count
+  against the number of units. The format allocates no sequence, so each unit's
+  typed value is the only thing separating it from its siblings — no two may be
+  the same, and you need exactly as many values as units.
+
+> [!TIP]
+> The per-unit box is a paste target. If the numbers are already in a column in
+> your register or a spreadsheet, copy the column and paste it in one go rather
+> than typing forty values.
+
+The application checks the count and the duplicates before sending anything, so a
+miscount costs you a correction rather than a half-registered batch.
+
+> [!CAUTION]
+> These numbers become permanent inventory codes the moment the batch is created.
+> There is no editing them afterwards. Check the list before selecting Create
+> asset.
+
+An administrator sets whether the field appears and which shape it takes; see
+[Inventory code format](/administration/inventory-code-format).
 
 ## What happens next?
 

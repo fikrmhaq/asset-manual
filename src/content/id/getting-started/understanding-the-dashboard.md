@@ -5,7 +5,7 @@ order: 40
 keywords: [beranda, dasbor, ringkasan, ikhtisar, statistik, jumlah]
 related:
   - getting-started/finding-your-way-around
-  - reports/the-eight-reports
+  - reports/the-reports
 ---
 
 Beranda adalah layar pertama setelah Anda masuk. Ia berupa ringkasan, bukan ruang

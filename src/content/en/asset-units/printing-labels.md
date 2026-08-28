@@ -72,10 +72,10 @@ check it against the sticker in your hand.
 
 You will see **Not assigned** instead of a code, and no print button.
 
-An inventory code is built from the owning institution, so a unit whose asset has
-no institution has nothing to build one from. Set an institution on the asset;
-units registered after that get codes. Existing ones keep their blank, because a
-code that appeared later would not match anything already printed.
+An inventory code is built from the owning institution's format, so a unit whose
+asset has no institution has nothing to build one from. Set an institution on the
+asset; units registered after that get codes. Existing ones keep their blank,
+because a code that appeared later would not match anything already printed.
 
 ## Practical notes
 
@@ -85,7 +85,13 @@ code that appeared later would not match anything already printed.
   a scuffed corner, which is why the inventory code is also printed in large type
   — when the QR finally gives up, a person can still read the code and type it.
 - **Reprinting is safe.** The code never changes, so a replacement label is
-  identical to the one it replaces.
+  identical to the one it replaces. That holds even if your institution has
+  redesigned its format since — the redesign applies to units registered
+  afterwards, never to a code already issued.
+- **Two shapes on the shelf is normal.** After a format change, older units keep
+  their old-shaped codes and newer ones carry the new shape. Both scan, and
+  neither is wrong. See
+  [Inventory code format](/administration/inventory-code-format).
 
 ## Related articles
 

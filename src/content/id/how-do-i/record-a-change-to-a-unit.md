@@ -17,6 +17,7 @@ related:
   - concepts/history
   - how-do-i/move-an-asset-unit
   - how-do-i/view-unit-history
+  - reports/the-reports
 ---
 
 ## Untuk apa ini
@@ -90,6 +91,17 @@ Untuk unit yang belum pernah memiliki catatan apa pun, Anda memerlukan kondisi
 - Jika lokasi baru, atau lokasi mana pun di atasnya, memiliki
   [denah](/concepts/floor-plan), tab Ikhtisar kini menawarkan jejak tautan denah
   yang menuntun ke dalam.
+- Entri tersebut menjadi satu baris pada lembar **PERAWATAN** dalam ekspor
+  inventaris, di bawah bulan saat entri dicatat — dan **Deskripsi** Anda menjadi
+  keterangan bulan tersebut. Lihat [Daftar laporan](/reports/the-reports).
+
+> [!TIP]
+> Inilah kebiasaan yang menjadi tumpuan lembar perawatan. Tidak ada bagian
+> aplikasi yang mengingatkan siapa pun untuk memeriksa unit, sehingga bulan tanpa
+> entri akan kosong pada lembar itu — tidak dapat dibedakan dari bulan yang
+> memang tidak diperiksa. Satu catatan singkat setiap kali Anda memeriksa sesuatu
+> adalah yang membuat lembar itu layak dicetak.
+
 
 ## Jika penyimpanan ditolak
 

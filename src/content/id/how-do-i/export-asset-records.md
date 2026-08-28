@@ -8,7 +8,7 @@ permissions:
 keywords: [ekspor aset, daftar aset, csv, unduh, lembar kerja, cadangan]
 related:
   - how-do-i/export-data
-  - reports/the-eight-reports
+  - reports/the-reports
 ---
 
 ## Jawaban singkatnya
@@ -63,4 +63,4 @@ berhalaman.
 ## Tugas terkait
 
 - [Bagaimana cara mengekspor data?](/how-do-i/export-data)
-- [Delapan laporan](/reports/the-eight-reports)
+- [Daftar laporan](/reports/the-reports)

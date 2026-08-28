@@ -14,6 +14,7 @@ keywords:
 related:
   - how-do-i/manage-reference-data
   - concepts/category
+  - administration/inventory-code-format
 ---
 
 **Lookups** is one screen with six tabs, holding the short lists the rest of the
@@ -34,11 +35,44 @@ Find it under **Organization › Lookups**.
 
 ## What an entry holds
 
-Measurement units, contract types and funding sources need only a **name**.
+Measurement units, contract types and transaction types need only a **name**.
 
-Transaction types and account codes also have a **code** — up to 12 characters,
-and **permanent** once created. Choose it carefully; the name can be corrected
-later, the code cannot.
+Account codes also have a **code** — up to 12 characters, and **permanent** once
+created, because it is the entry's identity rather than a label on it. Choose it
+carefully; the name can be corrected later, the code cannot.
+
+Funding sources have a **code** too, but a different kind of one — see below.
+
+## Funding source codes
+
+A funding source carries a short business abbreviation of up to eight characters,
+alongside its name. `Dana Bos` is called `BOS`.
+
+It exists because the code can end up **inside an inventory code**, where a
+hundred-character display name cannot go. See
+[Inventory code format](/administration/inventory-code-format).
+
+> [!IMPORTANT]
+> **The code is not derived from the name, and the application will not guess
+> it.** Shortening `Dana Bos` mechanically gives `DANA_BOS`, which is not what
+> anyone calls it — and once a code has been used inside an inventory code it is
+> permanent. So the application asks rather than inventing.
+
+Funding sources created before this field existed have **no code**. They are
+flagged **No code yet** in the list, because a funding source without one cannot
+be used by an inventory code format that includes it: registering a unit against
+a contract with that funding source is **refused** until the code is set.
+
+To set one: find the row, select **Edit**, enter the abbreviation your
+institution actually uses, and save.
+
+## Correcting an entry
+
+Select **Edit** on any row of the five editable lists. Names can be corrected on
+all of them, and the funding source code can be set or changed here too.
+
+An account code's own **code** is the exception — it is the entry's identity, so
+the edit form offers only the name.
 
 ## Why keep these lists short
 

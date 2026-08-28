@@ -17,6 +17,7 @@ related:
   - concepts/history
   - how-do-i/move-an-asset-unit
   - how-do-i/view-unit-history
+  - reports/the-reports
 ---
 
 ## What this does
@@ -89,6 +90,15 @@ and a location. After that, either may be left alone.
 - If the new location, or any location above it, has a
   [floor plan](/concepts/floor-plan), the Overview tab now offers a trail of plan
   links showing the way in.
+- The entry becomes a row on the **PERAWATAN** sheet of the inventory export,
+  under the month it was recorded in — and your **Description** becomes that
+  month's note. See [The reports](/reports/the-reports).
+
+> [!TIP]
+> This is the habit the maintenance sheet depends on. Nothing in the application
+> prompts anyone to assess a unit, so a month with no entry is simply blank on
+> that sheet — indistinguishable from a month nobody looked. A short entry each
+> time you check something is what makes the sheet worth printing.
 
 ## If the save is refused
 

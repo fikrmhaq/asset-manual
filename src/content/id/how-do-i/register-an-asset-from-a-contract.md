@@ -39,8 +39,9 @@ memiliki kontrak di belakangnya.
 6. Pilih **Vendor** bila ingin mencatat pabrikannya.
 7. Tetapkan **Unit aset yang didaftarkan**. Terisi otomatis dengan kuantitas yang
    dipesan.
-8. Tambahkan **Deskripsi** bila membantu.
-9. Pilih **Buat aset**.
+8. Bila kolom **Komposisi nomor** ditampilkan, isikan. Lihat di bawah.
+9. Tambahkan **Deskripsi** bila membantu.
+10. Pilih **Buat aset**.
 
 ![Menambahkan aset dari item baris kontrak](/screenshots/procurement/add-asset-from-contract.gif)
 
@@ -52,12 +53,41 @@ memiliki kontrak di belakangnya.
 | Klasifikasi | Ya | Baris kontrak tidak membawanya, jadi dipilih di sini. Hanya tingkat paling rinci |
 | Vendor | Tidak | Pabrikan atau merek |
 | Unit aset yang didaftarkan | Ya | Bilangan bulat 1 sampai 500. Terisi otomatis dengan kuantitas yang dipesan |
+| Komposisi nomor | Hanya bila ditampilkan | Menjadi bagian dari kode inventaris permanen setiap unit. Satu nilai, atau satu per unit — lihat di bawah |
 | Deskripsi | Tidak | Maksimal 5.000 karakter |
 
 > [!TIP]
 > Mendaftarkan unit lebih sedikit daripada yang dipesan adalah hal biasa, bukan
 > kesalahan. Pengiriman sebagian memang diperkirakan — daftarkan yang sudah
 > datang, dan daftarkan sisanya pada item baris yang sama ketika barangnya tiba.
+
+## Tentang Komposisi nomor
+
+Kolom ini muncul **hanya jika format kode inventaris instansi Anda memintanya**,
+dan bentuknya mengikuti cara format itu disusun:
+
+- **Satu nilai untuk seluruh batch.** Formatnya juga memakai nomor urut, dan
+  nomor urut itulah yang membedakan unit-unitnya. Ketik nomornya sekali saja.
+- **Satu nilai per unit**, diisikan satu per baris pada sebuah kotak, dengan
+  penghitung berjalan terhadap jumlah unit. Formatnya tidak memakai nomor urut,
+  sehingga nilai yang diketik untuk setiap unit adalah satu-satunya pembeda
+  antarunit — tidak boleh ada yang sama, dan jumlah nilainya harus persis sama
+  dengan jumlah unit.
+
+> [!TIP]
+> Kotak per unit itu memang untuk ditempeli. Jika nomor-nomornya sudah tersusun
+> dalam satu kolom di register atau lembar kerja Anda, salin kolomnya dan tempel
+> sekaligus alih-alih mengetik empat puluh nilai.
+
+Aplikasi memeriksa jumlah dan pengulangannya sebelum mengirim apa pun, sehingga
+salah hitung hanya memerlukan perbaikan, bukan batch yang terdaftar separuh.
+
+> [!CAUTION]
+> Nomor-nomor ini menjadi kode inventaris permanen begitu batch dibuat. Tidak ada
+> cara menyuntingnya setelahnya. Periksa daftarnya sebelum memilih Buat aset.
+
+Administrator menentukan apakah kolom ini muncul dan bentuk mana yang dipakai;
+lihat [Format kode inventaris](/administration/inventory-code-format).
 
 ## Apa yang terjadi setelahnya
 

@@ -124,8 +124,8 @@ export const SECTIONS = [
     icon: 'ChartColumn',
     title: { en: 'Reports & Audit', id: 'Laporan & Audit' },
     tagline: {
-      en: 'The eight reports, CSV export, and the read-only audit trail.',
-      id: 'Delapan laporan, ekspor CSV, dan jejak audit yang hanya dapat dibaca.',
+      en: 'Every report, the two kinds of export, and the read-only audit trail.',
+      id: 'Seluruh laporan, dua jenis ekspor, dan jejak audit yang hanya dapat dibaca.',
     },
   },
   {

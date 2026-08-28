@@ -6,6 +6,7 @@ keywords: [kesalahan, validasi, tidak bisa simpan, ditolak, konflik, wajib, gaga
 related:
   - borrowing/borrowing-statuses
   - getting-started/finding-your-way-around
+  - administration/inventory-code-format
 ---
 
 Penolakan saat menyimpan selalu berupa salah satu dari lima jenis. Pesannya
@@ -62,7 +63,7 @@ mempertahankan apa yang Anda ketik.
 
 ---
 
-## Dua penolakan yang mengejutkan banyak orang
+## Tiga penolakan yang mengejutkan banyak orang
 
 ### "Catat perubahan" ditolak tanpa deskripsi
 
@@ -83,3 +84,28 @@ Ternyata tidak. Penyimpanan ditolak kecuali Anda menuliskannya.
 Untuk unit yang belum pernah memiliki keduanya, "diteruskan" tidak punya apa pun
 untuk diteruskan. Entri pertama harus menetapkan keduanya. Setiap entri sesudahnya
 boleh mengosongkannya.
+
+### Pendaftaran unit ditolak karena sesuatu yang tidak ada pada formulir
+
+Pesan seperti *"format kode inventaris instansi ini memerlukan kode sumber
+dana, dan pendaftaran ini tidak memilikinya"* bukan tentang apa pun yang Anda
+ketik.
+
+Format kode inventaris instansi Anda disusun dari nilai-nilai yang dicari sendiri
+oleh aplikasi — bagian, klasifikasi, sumber dana pada kontrak. Bila format
+memerlukan salah satunya dan nilainya tidak ditemukan, pendaftaran ditolak,
+karena pilihan lainnya adalah kode permanen yang berlubang lalu tercetak pada
+stiker.
+
+Perbaikannya hampir tidak pernah ada pada formulir di hadapan Anda:
+
+| Yang disebut pesan | Tempat memperbaikinya |
+|---|---|
+| Kode sumber dana | **Organisasi › Data acuan › Sumber dana** — baris bertanda **Belum ada kode** perlu diberi singkatannya |
+| Kode bagian | Tetapkan bagian untuk unit tersebut saat mendaftarkannya |
+| Komposisi nomor | Isi kolomnya pada formulir; yang satu ini memang ada di formulir |
+
+Penolakan yang menyebut **kode sumber dana** adalah yang paling umum, dan
+biasanya masalahnya pada sumber dananya, bukan kontraknya: kontrak sudah menyebut
+sumber dana dengan benar, tetapi sumber dana itu belum pernah diberi singkatan.
+Lihat [Format kode inventaris](/administration/inventory-code-format).

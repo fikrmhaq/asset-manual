@@ -33,10 +33,11 @@ condition it is in — is recorded afterwards as history.
 1. Open **Assets** and select the asset.
 2. Open the **Units** tab.
 3. Select **Add unit**.
-4. Optionally enter a **Description** to tell this unit apart from its siblings.
-5. If the asset has a contract, optionally choose the **Procurement item** this
+4. If a **Number composition** field is shown, enter the number. See below.
+5. Optionally enter a **Description** to tell this unit apart from its siblings.
+6. If the asset has a contract, optionally choose the **Procurement item** this
    unit arrived on.
-6. Select **Create**.
+7. Select **Create**.
 
 ![The Add a unit dialog](/screenshots/asset-units/add-unit.gif)
 
@@ -44,8 +45,33 @@ condition it is in — is recorded afterwards as history.
 
 | Field | Required | Notes |
 |---|---|---|
+| Number composition | Only when shown | Part of the unit's permanent inventory code. Up to 16 characters, letters, digits, hyphen, underscore and dot. |
 | Description | No | Free text. Useful for a serial number or a nickname until attributes are filled in. |
 | Procurement item | No | Which line of the asset's contract this unit came from. Only shown when the asset has a contract and you can view contract items. |
+
+## About Number composition
+
+This field appears **only if your institution's inventory code format asks for
+one**. Most institutions do not, and never see it.
+
+Where it does appear, it is the number your institution already keeps in its own
+register, and it becomes part of the unit's permanent inventory code. The
+application stores exactly what you type — it never adjusts it, shortens it or
+counts up from it.
+
+> [!CAUTION]
+> There is no correcting it afterwards. The code it produces is issued the moment
+> the unit is created, and a code is permanent by design — editing the unit will
+> not offer this field again. Check the number before selecting Create.
+
+> [!NOTE]
+> If the application says the value is already taken, another unit already
+> carries the code your number would produce. Choose a different one — the
+> message names this field, not the code, because this is the half you can
+> change.
+
+An administrator sets whether the field appears; see
+[Inventory code format](/administration/inventory-code-format).
 
 > [!NOTE]
 > **Procurement item** is per unit, not per asset. Ten laptops on one contract

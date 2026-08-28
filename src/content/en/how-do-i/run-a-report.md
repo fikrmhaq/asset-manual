@@ -7,7 +7,7 @@ permissions:
   - report:read
 keywords: [report, laporan, run report, statistics, summary, analysis, numbers]
 related:
-  - reports/the-eight-reports
+  - reports/the-reports
   - how-do-i/export-data
 ---
 
@@ -20,7 +20,7 @@ related:
 
 ## Choosing the right one
 
-See [The eight reports](/reports/the-eight-reports) for what each answers. The
+See [The reports](/reports/the-reports) for what each answers. The
 common starting points:
 
 | You want | Report |
@@ -62,5 +62,5 @@ means the current page only.
 
 ## Related articles
 
-- [The eight reports](/reports/the-eight-reports)
+- [The reports](/reports/the-reports)
 - [How do I export data?](/how-do-i/export-data)
