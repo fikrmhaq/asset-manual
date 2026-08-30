@@ -5,6 +5,7 @@ order: 110
 keywords: [history, riwayat, timeline, audit, changes, past, when, record a change]
 related:
   - concepts/asset-unit
+  - concepts/monthly-assessment
   - how-do-i/record-a-change-to-a-unit
   - how-do-i/view-unit-history
 ---
@@ -54,6 +55,36 @@ Newest first. Each entry carries:
 
 The unit's Overview tab always shows the **current** values; the History tab
 shows how it got there.
+
+## Two dates on every entry, and they answer different questions
+
+- **Effective from** — when the recorded state began to apply. You can backdate
+  it: noticing on 2 August that a unit has been damaged since 31 July is
+  correctly recorded as effective from July.
+- **Recorded** — when the entry was actually written. This one is set by the
+  application and cannot be changed.
+
+The timeline reads by the effective date. [Monthly
+assessment](/concepts/monthly-assessment) counts by the recorded date, so a
+closed month cannot be improved after the fact.
+
+## Where an entry came from
+
+Not every entry on the timeline was written by somebody looking at the item. Each
+one records what produced it:
+
+| Kind | Written when |
+|---|---|
+| **Manual** | Somebody used **Record a change** on the unit |
+| **Borrowing** | The application moved the unit because it was borrowed or returned |
+
+Both appear on the timeline, because both are true things that happened to the
+unit. Only **manual** entries count towards
+[monthly assessment](/concepts/monthly-assessment) — lending an item out is not
+an inspection of it.
+
+A return can carry a note somebody typed, and that note is shown like any other.
+It is still a borrowing entry.
 
 ## History is not the audit log
 

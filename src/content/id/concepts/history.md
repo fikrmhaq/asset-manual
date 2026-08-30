@@ -5,6 +5,7 @@ order: 110
 keywords: [riwayat, lini masa, perubahan, masa lalu, kapan, catat perubahan]
 related:
   - concepts/asset-unit
+  - concepts/monthly-assessment
   - how-do-i/record-a-change-to-a-unit
   - how-do-i/view-unit-history
 ---
@@ -54,6 +55,36 @@ Terbaru di atas. Setiap entri memuat:
 
 Tab Ikhtisar unit selalu menampilkan nilai **terkini**; tab Riwayat menunjukkan
 bagaimana ia sampai ke sana.
+
+## Dua tanggal pada setiap entri, dan keduanya menjawab hal berbeda
+
+- **Berlaku sejak** — kapan keadaan yang dicatat mulai berlaku. Anda dapat
+  memundurkannya: menyadari pada 2 Agustus bahwa sebuah unit telah rusak sejak 31
+  Juli dicatat dengan benar sebagai berlaku sejak Juli.
+- **Dicatat** — kapan entri itu benar-benar ditulis. Yang ini ditetapkan aplikasi
+  dan tidak dapat diubah.
+
+Lini masa dibaca menurut tanggal berlaku.
+[Penilaian bulanan](/concepts/monthly-assessment) dihitung menurut tanggal
+pencatatan, sehingga bulan yang sudah tutup tidak dapat diperbaiki setelahnya.
+
+## Asal sebuah entri
+
+Tidak semua entri pada lini masa ditulis oleh seseorang yang melihat barangnya.
+Masing-masing mencatat apa yang menghasilkannya:
+
+| Jenis | Ditulis ketika |
+|---|---|
+| **Manual** | Seseorang menggunakan **Catat perubahan** pada unit |
+| **Peminjaman** | Aplikasi memindahkan unit karena dipinjam atau dikembalikan |
+
+Keduanya tampil pada lini masa, karena keduanya benar-benar terjadi pada unit
+tersebut. Hanya entri **manual** yang dihitung untuk
+[penilaian bulanan](/concepts/monthly-assessment) — meminjamkan barang bukanlah
+pemeriksaan atasnya.
+
+Pengembalian dapat membawa catatan yang diketik seseorang, dan catatan itu
+ditampilkan seperti catatan lain. Ia tetap entri peminjaman.
 
 ## Riwayat bukan log audit
 

@@ -14,11 +14,15 @@ numbers.
 
 Find them under **Reports & Audit › Reports**. Most need `perm:report:read`.
 
-**Inventory (per unit)** is the exception: it needs `perm:asset-unit:read`,
-because its rows are asset units rather than institution-wide totals. That is
-deliberate, and it is what lets a **department head see their own departments'
-inventory** — they will find the Reports section holding that one report and no
-others. See [Roles and permissions](/concepts/roles-and-permissions#pic-scoped-roles-and-why-a-permission-can-be-ignored).
+**Four are the exception** and need `perm:asset-unit:read` instead: **Inventory
+(per unit)**, **By location and condition**, **Monthly assessment coverage** and
+**Assessment activity**. All four count asset units rather than institution-wide
+totals, so they take the permission for the thing they read.
+
+That is deliberate, and it is what lets a **department head see their own
+departments' figures** — they will find the Reports section holding those four
+and none of the others. See [Roles and
+permissions](/concepts/roles-and-permissions#pic-scoped-roles-and-why-a-permission-can-be-ignored).
 
 > [!NOTE]
 > If someone cannot see a report you granted them, check whether their role is
@@ -36,6 +40,9 @@ others. See [Roles and permissions](/concepts/roles-and-permissions#pic-scoped-r
 | **By organization** | Which institution owns what, and which department is responsible |
 | **By location** | Where is everything — including units with no location recorded |
 | **By condition** | What state is our estate in |
+| **By location and condition** | Which room holds the damaged items — both axes crossed, with a roll-up toggle for whole buildings |
+| **Monthly assessment coverage** | Which departments have checked their units this month, and which units are outstanding |
+| **Assessment activity** | Who recorded those checks, counting entries and distinct units separately |
 | **Borrowings** | What is out on loan, what has been returned, and what is overdue |
 | **Procurement traceability** | Which assets trace back to a contract, and how many of their units carry the line item |
 
@@ -46,8 +53,20 @@ traceability — are paged
 tables you can sort and filter, one row per record.
 
 **Grouped reports** — Status, By classification, By organization, By location, By
-condition — are complete breakdowns with totals. They are not paged: you see the
-whole picture at once, with a simple bar chart alongside the table.
+condition, By location and condition, Monthly assessment coverage, Assessment
+activity — are complete breakdowns with totals. They are not paged: you see the
+whole picture at once, with a simple bar chart alongside the table where one
+helps.
+
+> [!NOTE]
+> **By location and condition** rolls up through the location hierarchy when you
+> ask it to, and rolled up the rows deliberately overlap — a unit in a room is
+> also counted in its building. The totals underneath count each unit once
+> regardless, so they will not match the sum of the rows. That is correct.
+
+The two assessment reports take a **month** filter and default to the current
+one. See [Monthly assessment](/concepts/monthly-assessment) for what they count
+and why coverage is measured on distinct units rather than on entries.
 
 ## Filters
 
